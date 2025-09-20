@@ -19,10 +19,10 @@ export default function About() {
             />
           </div>
           <div className="py-12">
-            <div className="mx-auto max-w-7xl px-6 lg:px-8 mt-16 flex flex-col md:flex-row gap-16">
+            <div className="mx-auto max-w-7xl px-6 lg:px-8 mt-16 flex flex-col md:flex-row gap-8">
               {/* <div className="flow-root"> */}
-              <div className="m-2 md:min-w-84 max-h-[450px] rounded-xl bg-gray-900/5 p-2 ring-1 ring-gray-900/10 ring-inset lg:-m-4 lg:rounded-2xl lg:p-4 dark:bg-white/2.5 dark:ring-white/10">
-                <div className="h-full overflow-hidden relative">
+              <div className="m-2 md:min-w-84 min-h-84 max-h-[450px]rounded-xl bg-gray-900/5 p-2 ring-1 ring-gray-900/10 ring-inset lg:rounded-2xl lg:p-4 dark:bg-white/2.5 dark:ring-white/10">
+                <div className="h-[450px] overflow-hidden relative">
                   <Image
                     alt="App screenshot"
                     src="/quickbooks_at_office.png"
