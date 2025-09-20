@@ -1,103 +1,72 @@
 import Image from "next/image";
 
-export default function Home() {
+export default function About() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing THIS IS THE ABOUT PAGE{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <div className="">
+      <main className="isolate">
+        {/* Hero section */}
+        <div className="relative pt-14">
+          <div
+            aria-hidden="true"
+            className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+            <div
+              style={{
+                clipPath:
+                  "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+              }}
+              className="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75 dark:opacity-20"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </div>
+          <div className="py-12">
+            <div className="mx-auto max-w-7xl px-6 lg:px-8 mt-16 flex flex-col md:flex-row gap-16">
+              {/* <div className="flow-root"> */}
+              <div className="m-2 md:min-w-84 max-h-[450px] rounded-xl bg-gray-900/5 p-2 ring-1 ring-gray-900/10 ring-inset lg:-m-4 lg:rounded-2xl lg:p-4 dark:bg-white/2.5 dark:ring-white/10">
+                <div className="h-full overflow-hidden relative">
+                  <Image
+                    alt="App screenshot"
+                    src="/quickbooks_at_office.png"
+                    //   width={2432}
+                    //   height={1442}
+                    fill={true}
+                    className="w-304 bg-gray-50 shadow-xl ring-1 ring-gray-900/10 rounded-lg"
+                    style={{ objectFit: "cover", objectPosition: "center" }}
+                  />
+                </div>
+              </div>
+              {/* </div> */}
+              <div className="mx-auto max-w-2xl lg:max-w-4xl">
+                <h1 className="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl lg:text-balance dark:text-white">
+                  About Breeze Bookkeeping
+                </h1>
+                <p className="mt-6 text-lg/8 text-gray-700 dark:text-gray-300">
+                  At Breeze Bookkeeping, we take the entire accounting function
+                  off your plate so you can focus on running your business. That
+                  begins with a solid foundation of accurate, timely
+                  bookkeeping. Clean books drive actionable financial insights
+                  and serve as the backbone for tax filings. When errors occur,
+                  the cost can be high — from poor decisions made on bad data to
+                  overpaying in taxes. That’s why having a CPA manage your
+                  bookkeeping and taxes is such a valuable safeguard.
+                </p>
+                <p className="mt-6 text-lg/8 text-gray-700 dark:text-gray-300">
+                  QuickBooks Online is our platform of choice because it’s the
+                  industry leader and can meet the full accounting needs of
+                  nearly all small businesses. Its ability to integrate with
+                  tools like time tracking, expense reporting, and online bill
+                  pay creates a more efficient system, boosting accuracy while
+                  saving time and money. For businesses better served by
+                  QuickBooks Desktop, we support that too. As Advanced Certified
+                  QuickBooks ProAdvisors in both versions, we’re equipped to
+                  provide the right solution for your unique needs.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+
+        {/* Testimonial section */}
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
 }

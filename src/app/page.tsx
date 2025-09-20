@@ -1,47 +1,7 @@
 "use client";
 
-import {
-  ArrowPathIcon,
-  Bars3Icon,
-  CloudArrowUpIcon,
-  FingerPrintIcon,
-  LockClosedIcon,
-  XMarkIcon,
-  BookOpenIcon,
-  CurrencyDollarIcon,
-  DocumentChartBarIcon,
-} from "@heroicons/react/24/outline";
-import { CheckIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
-
-const services = [
-  {
-    name: "Monthly Bookkeeping",
-    description:
-      "Accurate, up-to-date books every month so you can make business decisions with confidence.",
-    icon: BookOpenIcon,
-  },
-  {
-    name: "Payroll Services",
-    description:
-      "Reliable payroll management that ensures your team is paid correctly and on time, every time.",
-    icon: CurrencyDollarIcon,
-  },
-  {
-    name: "Cleanups",
-    description:
-      "Behind on bookkeeping? We’ll tidy up your records and get everything back on track quickly.",
-    icon: ArrowPathIcon,
-  },
-  {
-    name: "Financial Statement Analysis",
-    description:
-      "Clear, easy-to-understand insights into your financial statements to help guide smarter decisions.",
-    icon: DocumentChartBarIcon,
-  },
-];
+import { homePageServices } from "@/utils/constants";
 
 // const tiers = [
 //   {
@@ -325,10 +285,10 @@ export default function Homepage() {
         <div className="mx-auto mt-16 max-w-7xl sm:mt-20 lg:mt-32 px-6">
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
             <h2 className="text-base/7 font-semibold text-indigo-600 dark:text-indigo-400">
-              Professional Bookkeeping Services
+              Services Offered
             </h2>
             <dl className="grid max-w-xl grid-cols-1 gap-x-16 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16 mt-6">
-              {services.map((service) => (
+              {homePageServices.map((service) => (
                 <div key={service.name} className="relative pl-16">
                   <dt className="text-base/7 font-semibold text-gray-900 dark:text-white">
                     <div className="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-indigo-600 dark:bg-indigo-500">
