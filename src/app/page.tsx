@@ -1,7 +1,5 @@
 "use client";
 
-import { useState } from "react";
-import { Dialog, DialogPanel } from "@headlessui/react";
 import {
   ArrowPathIcon,
   Bars3Icon,
@@ -9,134 +7,134 @@ import {
   FingerPrintIcon,
   LockClosedIcon,
   XMarkIcon,
+  BookOpenIcon,
+  CurrencyDollarIcon,
+  DocumentChartBarIcon,
 } from "@heroicons/react/24/outline";
 import { CheckIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
-const features = [
+const services = [
   {
-    name: "Push to deploy",
+    name: "Monthly Bookkeeping",
     description:
-      "Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.",
-    icon: CloudArrowUpIcon,
+      "Accurate, up-to-date books every month so you can make business decisions with confidence.",
+    icon: BookOpenIcon,
   },
   {
-    name: "SSL certificates",
+    name: "Payroll Services",
     description:
-      "Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.",
-    icon: LockClosedIcon,
+      "Reliable payroll management that ensures your team is paid correctly and on time, every time.",
+    icon: CurrencyDollarIcon,
   },
   {
-    name: "Simple queues",
+    name: "Cleanups",
     description:
-      "Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.",
+      "Behind on bookkeeping? We’ll tidy up your records and get everything back on track quickly.",
     icon: ArrowPathIcon,
   },
   {
-    name: "Advanced security",
+    name: "Financial Statement Analysis",
     description:
-      "Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.",
-    icon: FingerPrintIcon,
+      "Clear, easy-to-understand insights into your financial statements to help guide smarter decisions.",
+    icon: DocumentChartBarIcon,
   },
 ];
-const tiers = [
-  {
-    name: "Freelancer",
-    id: "tier-freelancer",
-    href: "#",
-    priceMonthly: "$19",
-    description: "The essentials to provide your best work for clients.",
-    features: [
-      "5 products",
-      "Up to 1,000 subscribers",
-      "Basic analytics",
-      "48-hour support response time",
-    ],
-    mostPopular: false,
-  },
-  {
-    name: "Startup",
-    id: "tier-startup",
-    href: "#",
-    priceMonthly: "$49",
-    description: "A plan that scales with your rapidly growing business.",
-    features: [
-      "25 products",
-      "Up to 10,000 subscribers",
-      "Advanced analytics",
-      "24-hour support response time",
-      "Marketing automations",
-    ],
-    mostPopular: true,
-  },
-  {
-    name: "Enterprise",
-    id: "tier-enterprise",
-    href: "#",
-    priceMonthly: "$99",
-    description: "Dedicated support and infrastructure for your company.",
-    features: [
-      "Unlimited products",
-      "Unlimited subscribers",
-      "Advanced analytics",
-      "1-hour, dedicated support response time",
-      "Marketing automations",
-    ],
-    mostPopular: false,
-  },
-];
-const faqs = [
-  {
-    id: 1,
-    question: "What's the best thing about Switzerland?",
-    answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
-  },
-  {
-    id: 2,
-    question: "How do you make holy water?",
-    answer:
-      "You boil the hell out of it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aut tempora vitae odio inventore fuga aliquam nostrum quod porro. Delectus quia facere id sequi expedita natus.",
-  },
-  {
-    id: 3,
-    question: "What do you call someone with no body and no nose?",
-    answer:
-      "Nobody knows. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, voluptas ipsa quia excepturi, quibusdam natus exercitationem sapiente tempore labore voluptatem.",
-  },
-  {
-    id: 4,
-    question: "Why do you never see elephants hiding in trees?",
-    answer:
-      "Because they're so good at it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
-  },
-  {
-    id: 5,
-    question: "Why can't you hear a pterodactyl go to the bathroom?",
-    answer:
-      "Because the pee is silent. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, quas voluptatibus ex culpa ipsum, aspernatur blanditiis fugiat ullam magnam suscipit deserunt illum natus facilis atque vero consequatur! Quisquam, debitis error.",
-  },
-  {
-    id: 6,
-    question: "Why did the invisible man turn down the job offer?",
-    answer:
-      "He couldn't see himself doing it. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet perspiciatis officiis corrupti tenetur. Temporibus ut voluptatibus, perferendis sed unde rerum deserunt eius.",
-  },
-];
+
+// const tiers = [
+//   {
+//     name: "Freelancer",
+//     id: "tier-freelancer",
+//     href: "#",
+//     priceMonthly: "$19",
+//     description: "The essentials to provide your best work for clients.",
+//     features: [
+//       "5 products",
+//       "Up to 1,000 subscribers",
+//       "Basic analytics",
+//       "48-hour support response time",
+//     ],
+//     mostPopular: false,
+//   },
+//   {
+//     name: "Startup",
+//     id: "tier-startup",
+//     href: "#",
+//     priceMonthly: "$49",
+//     description: "A plan that scales with your rapidly growing business.",
+//     features: [
+//       "25 products",
+//       "Up to 10,000 subscribers",
+//       "Advanced analytics",
+//       "24-hour support response time",
+//       "Marketing automations",
+//     ],
+//     mostPopular: true,
+//   },
+//   {
+//     name: "Enterprise",
+//     id: "tier-enterprise",
+//     href: "#",
+//     priceMonthly: "$99",
+//     description: "Dedicated support and infrastructure for your company.",
+//     features: [
+//       "Unlimited products",
+//       "Unlimited subscribers",
+//       "Advanced analytics",
+//       "1-hour, dedicated support response time",
+//       "Marketing automations",
+//     ],
+//     mostPopular: false,
+//   },
+// ];
+// const faqs = [
+//   {
+//     id: 1,
+//     question: "What's the best thing about Switzerland?",
+//     answer:
+//       "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+//   },
+//   {
+//     id: 2,
+//     question: "How do you make holy water?",
+//     answer:
+//       "You boil the hell out of it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aut tempora vitae odio inventore fuga aliquam nostrum quod porro. Delectus quia facere id sequi expedita natus.",
+//   },
+//   {
+//     id: 3,
+//     question: "What do you call someone with no body and no nose?",
+//     answer:
+//       "Nobody knows. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, voluptas ipsa quia excepturi, quibusdam natus exercitationem sapiente tempore labore voluptatem.",
+//   },
+//   {
+//     id: 4,
+//     question: "Why do you never see elephants hiding in trees?",
+//     answer:
+//       "Because they're so good at it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+//   },
+//   {
+//     id: 5,
+//     question: "Why can't you hear a pterodactyl go to the bathroom?",
+//     answer:
+//       "Because the pee is silent. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, quas voluptatibus ex culpa ipsum, aspernatur blanditiis fugiat ullam magnam suscipit deserunt illum natus facilis atque vero consequatur! Quisquam, debitis error.",
+//   },
+//   {
+//     id: 6,
+//     question: "Why did the invisible man turn down the job offer?",
+//     answer:
+//       "He couldn't see himself doing it. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet perspiciatis officiis corrupti tenetur. Temporibus ut voluptatibus, perferendis sed unde rerum deserunt eius.",
+//   },
+// ];
 
 // function classNames(...classes) {
 //   return classes.filter(Boolean).join(" ");
 // }
 
 export default function Homepage() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
   return (
-    <div className="bg-white dark:bg-gray-900">
-      {/* Header */}
-      <Navigation />
+    <div className="">
 
       <main className="isolate">
         {/* Hero section */}
@@ -155,7 +153,7 @@ export default function Homepage() {
           </div>
           <div className="py-12">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
-              <div className="mx-auto max-w-3xl text-center">
+              <div className="mx-auto max-w-3xl text-center mt-16">
                 <h1 className="text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl dark:text-white">
                   Breeze Bookkeeping
                 </h1>
@@ -184,7 +182,7 @@ export default function Homepage() {
                     src="/cardwell_family.jpg"
                     width={2432}
                     height={1442}
-                    className="w-304 bg-gray-50 shadow-xl ring-1 ring-gray-900/10"
+                    className="w-304 bg-gray-50 shadow-xl ring-1 ring-gray-900/10 rounded-lg"
                   />
                 </div>
               </div>
@@ -275,7 +273,7 @@ export default function Homepage() {
             </p>
           </div> */}
 
-          {/* <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+        {/* <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
             <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
               {features.map((feature) => (
                 <div key={feature.name} className="relative pl-16">
@@ -298,15 +296,15 @@ export default function Homepage() {
         {/* </div> */}
 
         {/* Book a meeting */}
-        <div className="mx-auto mt-16 max-w-7xl sm:mt-20 lg:mt-24 bg-indigo-600 lg:rounded-3xl">
+        <div className="mx-auto mt-16 max-w-7xl sm:mt-20 lg:mt-24 bg-indigo-600 lg:rounded-2xl">
           <div className="mx-auto max-w-2xl p-12 lg:max-w-4xl text-white">
             <h2 className="text-base/7 font-semibold dark:text-indigo-00">
               Schedule a Meeting
             </h2>
-            <p className="mt-2 text-4xl">
+            <p className="mt-4 text-4xl">
               SCHEDULE A <strong>FREE</strong> PHONE CONSULTATION
             </p>
-            <p className="mt-2 text-lg/8">
+            <p className="mt-4 text-lg/8">
               Let&apos;s talk about how profitable and affordable it is to have
               a CPA handle your monthly bookkeeping and taxes. Click on the
               button below to select a day and time that works for you and you
@@ -324,22 +322,25 @@ export default function Homepage() {
         </div>
 
         {/* Featres */}
-        <div className="mx-auto mt-16 max-w-7xl sm:mt-20 lg:mt-24 px-6">
+        <div className="mx-auto mt-16 max-w-7xl sm:mt-20 lg:mt-32 px-6">
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-            <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-              {features.map((feature) => (
-                <div key={feature.name} className="relative pl-16">
+            <h2 className="text-base/7 font-semibold text-indigo-600 dark:text-indigo-400">
+              Professional Bookkeeping Services
+            </h2>
+            <dl className="grid max-w-xl grid-cols-1 gap-x-16 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16 mt-6">
+              {services.map((service) => (
+                <div key={service.name} className="relative pl-16">
                   <dt className="text-base/7 font-semibold text-gray-900 dark:text-white">
                     <div className="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-indigo-600 dark:bg-indigo-500">
-                      <feature.icon
+                      <service.icon
                         aria-hidden="true"
                         className="size-6 text-white"
                       />
                     </div>
-                    {feature.name}
+                    {service.name}
                   </dt>
                   <dd className="mt-2 text-base/7 text-gray-600 dark:text-gray-400">
-                    {feature.description}
+                    {service.description}
                   </dd>
                 </div>
               ))}
@@ -348,7 +349,7 @@ export default function Homepage() {
         </div>
 
         {/* Testimonial section */}
-        <div className="mx-auto mt-32 max-w-7xl sm:mt-56 sm:px-6 lg:px-8">
+        <div className="mx-auto mt-16 lg:mt-32 max-w-7xl sm:px-6 lg:px-8">
           <div className="relative overflow-hidden bg-gray-900 px-6 py-20 shadow-xl sm:rounded-3xl sm:px-10 sm:py-24 md:px-12 lg:px-20 dark:bg-black dark:shadow-none dark:after:pointer-events-none dark:after:absolute dark:after:inset-0 dark:after:inset-ring dark:after:inset-ring-white/10 dark:after:sm:rounded-3xl">
             <img
               alt=""
@@ -578,8 +579,6 @@ export default function Homepage() {
         </div> */}
       </main>
 
-      {/* Footer */}
-      <Footer />
     </div>
   );
 }

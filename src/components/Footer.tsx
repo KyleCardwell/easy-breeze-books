@@ -1,9 +1,15 @@
+"use client";
+
 import { navigation } from "@/utils/constants";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const Footer = () => {
+  const pathname = usePathname();
+  
   return (
-    <footer className="relative mx-auto mt-32 max-w-7xl px-6 lg:px-8">
+    <footer className="relative mx-auto pt-32 max-w-7xl px-6 lg:px-8">
       <div className="border-t border-gray-900/10 py-16 sm:py-24 lg:py-32 dark:border-white/10">
         <div className="xl:grid xl:grid-cols-2 xl:gap-8">
           {/* <img
@@ -16,7 +22,7 @@ const Footer = () => {
             src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
             className="h-9 not-dark:hidden"
           /> */}
-          <div className="flex flex-col mt-16 md:grid md:grid-cols-2 md:gap-8 xl:col-span-2 xl:mt-0">
+          <div className="flex flex-col mt-16 md:grid md:grid-cols-2 md:gap-8 xl:col-span-2 md:mt-0">
             {/* Badges */}
             <div className="mx-auto grid grid-cols-2 items-center gap-x-8 gap-y-12 sm:gap-x-10 sm:gap-y-14">
               <Image
@@ -51,16 +57,24 @@ const Footer = () => {
                   Navigate
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
-                  {[{ name: "Home", href: "" }, ...navigation].map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-sm/6 text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
+                  {navigation.map((item) => {
+                    const isActive = pathname === item.href;
+                    return (
+                      <li key={item.name}>
+                        <Link
+                          href={item.href}
+                          className={`text-sm/6 ${
+                            isActive
+                              ? "text-indigo-600 font-semibold dark:text-indigo-400"
+                              : "text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+                          }`}
+                          suppressHydrationWarning
+                        >
+                          {item.name}
+                        </Link>
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             </div>
