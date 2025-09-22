@@ -1,4 +1,3 @@
-
 import { CheckIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
 import { services } from "@/utils/constants";
@@ -66,8 +65,8 @@ export default function Services() {
               books drive actionable financial insights and serve as the
               backbone for tax filings. When errors occur, the cost can be high
               — from poor decisions made on bad data to overpaying in taxes.
-              That’s why having a CPA manage your bookkeeping and taxes is such
-              a valuable safeguard.
+              That’s why having a certified Quickbooks ProAdvisor manage your
+              bookkeeping and taxes is such a valuable safeguard.
             </p>
             <p className="mt-6 text-lg/8 text-gray-700 dark:text-gray-300">
               QuickBooks Online is our platform of choice because it’s the
@@ -75,10 +74,9 @@ export default function Services() {
               all small businesses. Its ability to integrate with tools like
               time tracking, expense reporting, and online bill pay creates a
               more efficient system, boosting accuracy while saving time and
-              money. For businesses better served by QuickBooks Desktop, we
-              support that too. As Advanced Certified QuickBooks ProAdvisors in
-              both versions, we’re equipped to provide the right solution for
-              your unique needs.
+              money. As Advanced Certified QuickBooks ProAdvisors,
+              we’re equipped to provide the right solution for your unique
+              needs.
             </p>
           </div>
         </div>

@@ -19,13 +19,13 @@ export default function About() {
             />
           </div>
           <div className="py-12">
-            <div className="mx-auto max-w-7xl px-6 lg:px-8 mt-16 flex flex-col md:flex-row gap-8">
+            <div className="mx-auto max-w-7xl px-6 lg:px-8 mt-16 flex flex-col sm:flex-row gap-8">
               {/* <div className="flow-root"> */}
-              <div className="m-2 md:min-w-84 min-h-84 max-h-[450px]rounded-xl bg-gray-900/5 p-2 ring-1 ring-gray-900/10 ring-inset lg:rounded-2xl lg:p-4 dark:bg-white/2.5 dark:ring-white/10">
-                <div className="h-[450px] overflow-hidden relative">
+              <div className="m-2 sm:min-w-84 min-h-84 rounded-xl bg-gray-900/5 p-2 ring-1 ring-gray-900/10 ring-inset lg:rounded-2xl lg:p-4 dark:bg-white/2.5 dark:ring-white/10 self-start">
+                <div className="min-h-84 sm:h-[450px] overflow-hidden relative">
                   <Image
                     alt="App screenshot"
-                    src="/quickbooks_at_office.png"
+                    src="/DC photo at UA conf 24Jan v2.avif"
                     //   width={2432}
                     //   height={1442}
                     fill={true}
@@ -40,25 +40,29 @@ export default function About() {
                   About Breeze Bookkeeping
                 </h1>
                 <p className="mt-6 text-lg/8 text-gray-700 dark:text-gray-300">
-                  At Breeze Bookkeeping, we take the entire accounting function
-                  off your plate so you can focus on running your business. That
-                  begins with a solid foundation of accurate, timely
-                  bookkeeping. Clean books drive actionable financial insights
-                  and serve as the backbone for tax filings. When errors occur,
-                  the cost can be high — from poor decisions made on bad data to
-                  overpaying in taxes. That’s why having a CPA manage your
-                  bookkeeping and taxes is such a valuable safeguard.
+                  Hello! I&apos;m Darren Cardwell, the face behind Breeze
+                  Bookkeeping. I&apos;m a Quickbooks ProAdvisor based in
+                  Herriman, UT, near Salt Lake City. Thanks to cloud technology,
+                  however, I work with business owners all over the country.
+                  From account reconciliation and categorizing transactions to
+                  payroll, invoicing, and payables, to full-service accounting,
+                  I handle it all!
                 </p>
                 <p className="mt-6 text-lg/8 text-gray-700 dark:text-gray-300">
-                  QuickBooks Online is our platform of choice because it’s the
-                  industry leader and can meet the full accounting needs of
-                  nearly all small businesses. Its ability to integrate with
-                  tools like time tracking, expense reporting, and online bill
-                  pay creates a more efficient system, boosting accuracy while
-                  saving time and money. For businesses better served by
-                  QuickBooks Desktop, we support that too. As Advanced Certified
-                  QuickBooks ProAdvisors in both versions, we’re equipped to
-                  provide the right solution for your unique needs.
+                  I’ve always loved numbers — there’s something so satisfying
+                  about seeing everything click into place. For me, accounting
+                  feels almost like a science, and I get a lot of joy out of
+                  making sense of it all. But what I love even more is using
+                  that skill to help business owners succeed. When we work
+                  together, my goal is to make bookkeeping feel simple and
+                  stress-free, so business owners can focus on what{" "}
+                  <strong>lights them up</strong> in their business while I take
+                  care of the numbers behind the scenes.
+                </p>
+                <p className="mt-6 text-lg/8 text-gray-700 dark:text-gray-300">
+                  I grew up in California, and moved to Utah in 2001 with my
+                  wife and 4 sons. I currently live in Herriman, Utah and love
+                  spending time with my sons and their growing families.
                 </p>
               </div>
             </div>
