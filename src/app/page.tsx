@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { homePageServices } from "@/utils/constants";
+import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 
 // const tiers = [
 //   {
@@ -279,8 +280,8 @@ export default function Homepage() {
                 </div>
               ))}
             </dl>
-          </div> */}
-        {/* </div> */}
+          </div>
+        </div> */}
 
         {/* Book a meeting */}
         <div className="mx-auto mt-16 max-w-7xl sm:mt-20 lg:mt-24 bg-indigo-600 lg:rounded-2xl">
@@ -345,65 +346,34 @@ export default function Homepage() {
 
         {/* Testimonial section */}
         <div className="mx-auto mt-16 lg:mt-32 max-w-7xl sm:px-6 lg:px-8">
-          <div className="relative overflow-hidden bg-gray-900 px-6 py-20 shadow-xl sm:rounded-3xl sm:px-10 sm:py-24 md:px-12 lg:px-20 dark:bg-black dark:shadow-none dark:after:pointer-events-none dark:after:absolute dark:after:inset-0 dark:after:inset-ring dark:after:inset-ring-white/10 dark:after:sm:rounded-3xl">
-            <img
-              alt=""
-              src="https://images.unsplash.com/photo-1601381718415-a05fb0a261f3?ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8ODl8fHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1216&q=80"
-              className="absolute inset-0 size-full object-cover brightness-150 saturate-0"
-            />
-            <div className="absolute inset-0 bg-gray-900/90 mix-blend-multiply" />
-            <div
-              aria-hidden="true"
-              className="absolute -top-56 -left-80 transform-gpu blur-3xl"
-            >
-              <div
-                style={{
-                  clipPath:
-                    "polygon(73.6% 48.6%, 91.7% 88.5%, 100% 53.9%, 97.4% 18.1%, 92.5% 15.4%, 75.7% 36.3%, 55.3% 52.8%, 46.5% 50.9%, 45% 37.4%, 50.3% 13.1%, 21.3% 36.2%, 0.1% 0.1%, 5.4% 49.1%, 21.4% 36.4%, 58.9% 100%, 73.6% 48.6%)",
-                }}
-                className="aspect-1097/845 w-274.25 bg-linear-to-r from-[#ff4694] to-[#776fff] opacity-[0.45] dark:opacity-[0.30]"
-              />
-            </div>
-            <div
-              aria-hidden="true"
-              className="hidden md:absolute md:bottom-16 md:left-200 md:block md:transform-gpu md:blur-3xl"
-            >
-              <div
-                style={{
-                  clipPath:
-                    "polygon(73.6% 48.6%, 91.7% 88.5%, 100% 53.9%, 97.4% 18.1%, 92.5% 15.4%, 75.7% 36.3%, 55.3% 52.8%, 46.5% 50.9%, 45% 37.4%, 50.3% 13.1%, 21.3% 36.2%, 0.1% 0.1%, 5.4% 49.1%, 21.4% 36.4%, 58.9% 100%, 73.6% 48.6%)",
-                }}
-                className="aspect-1097/845 w-274.25 bg-linear-to-r from-[#ff4694] to-[#776fff] opacity-25 dark:opacity-20"
-              />
-            </div>
-            <div className="relative mx-auto max-w-2xl lg:mx-0">
-              <img
-                alt=""
-                src="https://tailwindcss.com/plus-assets/img/logos/workcation-logo-white.svg"
-                className="h-12 w-auto dark:hidden"
-              />
-              <img
-                alt=""
-                src="https://tailwindcss.com/plus-assets/img/logos/workcation-logo-white.svg"
-                className="h-12 w-auto not-dark:hidden"
-              />
-              <figure>
-                <blockquote className="mt-6 text-lg font-semibold text-white sm:text-xl/8">
-                  <p>
-                    “Amet amet eget scelerisque tellus sit neque faucibus non
-                    eleifend. Integer eu praesent at a. Ornare arcu gravida
-                    natoque erat et cursus tortor consequat at. Vulputate
-                    gravida sociis enim nullam ultricies habitant malesuada
-                    lorem ac.”
-                  </p>
-                </blockquote>
-                <figcaption className="mt-6 text-base text-white dark:text-gray-200">
-                  <div className="font-semibold">Judith Black</div>
-                  <div className="mt-1">CEO of Tuple</div>
-                </figcaption>
-              </figure>
-            </div>
-          </div>
+          <TestimonialsCarousel
+            testimonials={[
+              {
+                name: "Cory C",
+                title: "",
+                testimonial:
+                  "I can’t thank Darren at Breeze Bookkeeping enough. He helped me get my house cleaning business back on track after years of feeling overwhelmed with the books. He explains things in a way that actually makes sense, answers questions right away, and takes a lot of the stress off my shoulders. Super easy to work with and really dependable. I’d absolutely recommend him to other small business owners!",
+              },
+              {
+                name: "Kyle C",
+                title: "",
+                testimonial:
+                  "Darren does amazing and precise work! He is incredibly responsive and a great person to work with.",
+              },
+              {
+                name: "Jared S",
+                title: "",
+                testimonial:
+                  "Breeze Bookkeeping is a fabulous company, they are timely, accurate, and very responsive to clients. I highly recommend them.",
+              },
+              {
+                name: "Pete H",
+                title: "",
+                testimonial:
+                  "Darren is amazing with numbers! He was born to work among them! Very easy to work with and talk to as well. Very professional.",
+              },
+            ]}
+          />
         </div>
 
         {/* Pricing section */}
