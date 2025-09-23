@@ -35,7 +35,7 @@ export default function Services() {
                   <div className="h-[450px] overflow-hidden relative">
                     <Image
                       alt="App screenshot"
-                      src="/quickbooks_at_office.png"
+                      src="/quickbooks_at_office.avif"
                       //   width={2432}
                       //   height={1442}
                       fill={true}
