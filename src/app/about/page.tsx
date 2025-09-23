@@ -18,28 +18,29 @@ export default function About() {
               className="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75 dark:opacity-20"
             />
           </div>
+
           <div className="py-12">
-            <div className="mx-auto max-w-7xl px-6 lg:px-8 mt-16 flex flex-col sm:flex-row gap-8">
-              {/* <div className="flow-root"> */}
-              <div className="m-2 sm:min-w-84 min-h-84 rounded-xl bg-gray-900/5 p-2 ring-1 ring-gray-900/10 ring-inset lg:rounded-2xl lg:p-4 dark:bg-white/2.5 dark:ring-white/10 self-start">
-                <div className="min-h-84 sm:h-[450px] overflow-hidden relative">
-                  <Image
-                    alt="App screenshot"
-                    src="/DC photo at UA conf 24Jan v2.avif"
-                    //   width={2432}
-                    //   height={1442}
-                    fill={true}
-                    className="w-304 bg-gray-50 shadow-xl ring-1 ring-gray-900/10 rounded-lg"
-                    style={{ objectFit: "cover", objectPosition: "center" }}
-                  />
-                </div>
-              </div>
-              {/* </div> */}
-              <div className="mx-auto max-w-2xl lg:max-w-4xl">
-                <h1 className="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl lg:text-balance dark:text-white">
+            <div className="mx-auto max-w-7xl px-6 lg:px-8 mt-16">
+              <article className="prose prose-lg dark:prose-invert max-w-none">
+                <h1 className="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl lg:text-balance dark:text-white mb-8">
                   About Breeze Bookkeeping
                 </h1>
-                <p className="mt-6 text-lg/8 text-gray-700 dark:text-gray-300">
+
+                <div className="float-left mr-6 mb-6 w-full sm:w-[300px]">
+                  <div className="rounded-xl bg-gray-900/5 p-2 ring-1 ring-gray-900/10 ring-inset lg:rounded-2xl lg:p-4 dark:bg-white/2.5 dark:ring-white/10">
+                    <div className="h-[300px] sm:h-[400px] overflow-hidden relative">
+                      <Image
+                        alt="Darren Cardwell"
+                        src="/DC photo at UA conf 24Jan v2.avif"
+                        fill={true}
+                        className="bg-gray-50 shadow-xl ring-1 ring-gray-900/10 rounded-lg"
+                        style={{ objectFit: "cover", objectPosition: "center" }}
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <p className="text-lg/8 text-gray-700 dark:text-gray-300">
                   Hello! I&apos;m Darren Cardwell, the face behind Breeze
                   Bookkeeping. I&apos;m a Quickbooks ProAdvisor based in
                   Herriman, UT, near Salt Lake City. Thanks to cloud technology,
@@ -48,28 +49,28 @@ export default function About() {
                   payroll, invoicing, and payables, to full-service accounting,
                   I handle it all!
                 </p>
-                <p className="mt-6 text-lg/8 text-gray-700 dark:text-gray-300">
-                  I’ve always loved numbers — there’s something so satisfying
-                  about seeing everything click into place. For me, accounting
-                  feels almost like a science, and I get a lot of joy out of
-                  making sense of it all. But what I love even more is using
-                  that skill to help business owners succeed. When we work
+
+                <p className="text-lg/8 text-gray-700 dark:text-gray-300 mt-6">
+                  I&apos;ve always loved numbers — there&apos;s something so
+                  satisfying about seeing everything click into place. For me,
+                  accounting feels almost like a science, and I get a lot of joy
+                  out of making sense of it all. But what I love even more is
+                  using that skill to help business owners succeed. When we work
                   together, my goal is to make bookkeeping feel simple and
                   stress-free, so business owners can focus on what{" "}
                   <strong>lights them up</strong> in their business while I take
                   care of the numbers behind the scenes.
                 </p>
-                <p className="mt-6 text-lg/8 text-gray-700 dark:text-gray-300">
+
+                <p className="text-lg/8 text-gray-700 dark:text-gray-300 mt-6">
                   I grew up in California, and moved to Utah in 2001 with my
                   wife and 4 sons. I currently live in Herriman, Utah and love
                   spending time with my sons and their growing families.
                 </p>
-              </div>
+              </article>
             </div>
           </div>
         </div>
-
-        {/* Testimonial section */}
       </main>
     </div>
   );

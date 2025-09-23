@@ -1,4 +1,12 @@
+"use client";
+
+import { useState } from "react";
+import ContactForm from "@/components/ContactForm";
+import { ChevronDownIcon } from "@heroicons/react/24/outline";
+
 const Contact = () => {
+  const [isFormOpen, setIsFormOpen] = useState(false);
+
   return (
     <div className="mx-auto mt-16 max-w-7xl sm:mt-20 lg:mt-24">
       <div className="mx-auto max-w-2xl p-12 lg:max-w-4xl text-white">
@@ -19,6 +27,30 @@ const Contact = () => {
           >
             <div className="mt-8 rounded bg-white py-2 px-4">Schedule Call</div>
           </a>
+        </div>
+        
+        {/* Accordion for Contact Form */}
+        <div className="mt-16">
+          <button 
+            onClick={() => setIsFormOpen(!isFormOpen)}
+            className="w-full flex items-center justify-between text-left"
+          >
+            <h1 className="text-4xl text-indigo-600">
+              OR FILL OUT THIS FORM
+            </h1>
+            <ChevronDownIcon 
+              className={`h-8 w-8 text-indigo-600 transition-transform duration-300 ${isFormOpen ? 'rotate-180' : ''}`} 
+            />
+          </button>
+          
+          {/* Accordion Content */}
+          <div 
+            className={`transition-all duration-300 ease-in-out overflow-hidden ${
+              isFormOpen ? 'max-h-[1200px] opacity-100 mt-6' : 'max-h-0 opacity-0'
+            }`}
+          >
+            <ContactForm />
+          </div>
         </div>
       </div>
     </div>
