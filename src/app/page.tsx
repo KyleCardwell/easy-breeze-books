@@ -95,7 +95,6 @@ import { homePageServices } from "@/utils/constants";
 export default function Homepage() {
   return (
     <div className="">
-
       <main className="isolate">
         {/* Hero section */}
         <div className="relative pt-14">
@@ -171,7 +170,7 @@ export default function Homepage() {
             <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl lg:text-balance dark:text-white">
               Accurate, Affordable, and Stress-Free Accounting
             </p>
-            <p className="mt-6 text-lg/8 text-gray-700 dark:text-gray-300">
+            {/* <p className="mt-6 text-lg/8 text-gray-700 dark:text-gray-300">
               At Breeze Bookkeeping, we provide business owners with the
               financial clarity they need to grow profitably while reducing tax
               liabilities. Our full-service accounting firm specializes in{" "}
@@ -195,6 +194,34 @@ export default function Homepage() {
               maximize profitability. With Breeze Bookkeeping, you gain a
               trusted partner who ensures your books are accurate and your taxes
               are minimized.
+            </p> */}
+            <p className="mt-6 text-lg/8 text-gray-700 dark:text-gray-300">
+              At Breeze Bookkeeping, my goal is to give business owners the
+              financial clarity and confidence they need to grow profitably and
+              keep more of what they earn. From bookkeeping and payroll to
+              financial statement analysis, I take care of the details so you
+              can make smart decisions without the stress of wondering if your
+              numbers are right.
+            </p>
+
+            <p className="mt-6 text-lg/8 text-gray-700 dark:text-gray-300">
+              Although I’m based in Herriman, UT—just outside Salt Lake City—I
+              work with businesses all over the country thanks to secure,
+              cloud-based technology. As a{" "}
+              <strong>QuickBooks Online ProAdvisor</strong>, I help connect your
+              bookkeeping with the best financial apps available, streamlining
+              your systems so everything works smoothly together.
+            </p>
+
+            <p className="mt-6 text-lg/8 text-gray-700 dark:text-gray-300">
+              What matters most to me is making bookkeeping fast, accurate, and
+              affordable, so you can focus on running your business with peace
+              of mind. I’ve had the privilege of supporting companies across
+              many industries, and I’ve developed proven systems that save time,
+              cut costs, and help businesses thrive. With Breeze Bookkeeping,
+              you’re not just getting accurate books—you’re gaining a trusted
+              partner who makes sure your finances feel as effortless as a
+              breeze.
             </p>
           </div>
         </div>
@@ -264,11 +291,11 @@ export default function Homepage() {
             <p className="mt-4 text-4xl">
               SCHEDULE A <strong>FREE</strong> PHONE CONSULTATION
             </p>
-            <p className="mt-4 text-lg/8">
-              Let&apos;s talk about how profitable and affordable it is to have
-              a CPA handle your monthly bookkeeping and taxes. Click on the
-              button below to select a day and time that works for you and you
-              will be immediately scheduled in my calendar!
+            <p className="mt-4 text-lg/8 text-pretty">
+              Let&apos;s talk about how affordable and profitable it can be to
+              have a QuickBooks ProAdvisor manage your monthly bookkeeping.
+              Simply click the button below to choose a day and time that works
+              best for you, and you’ll be instantly booked in my calendar!
             </p>
             <div className="w-full flex justify-center mt-6">
               <a
@@ -305,6 +332,14 @@ export default function Homepage() {
                 </div>
               ))}
             </dl>
+            <div className="w-full flex justify-center mt-6">
+              <a
+                href="/services"
+                className="text-md/8 text-indigo-600 hover:text-indigo-500 font-semibold dark:text-indigo-400 dark:hover:text-indigo-300"
+              >
+                See all services
+              </a>
+            </div>
           </div>
         </div>
 
@@ -538,7 +573,6 @@ export default function Homepage() {
           </div>
         </div> */}
       </main>
-
     </div>
   );
 }
