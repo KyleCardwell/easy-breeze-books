@@ -22,22 +22,12 @@ export default function Services() {
           </div>
           <div className="py-12">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
-              {/* <div className="mx-auto max-w-3xl text-center mt-16">
-                <h1 className="text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl dark:text-white">
-                  Breeze Bookkeeping
-                </h1>
-                <p className="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8 dark:text-gray-400">
-                  ~Effortless accounting that feels like a breeze~
-                </p>
-              </div> */}
               <div className="mt-16 flow-root sm:mt-24">
                 <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-gray-900/10 ring-inset lg:-m-4 lg:rounded-2xl lg:p-4 dark:bg-white/2.5 dark:ring-white/10">
                   <div className="h-[450px] overflow-hidden relative">
                     <Image
                       alt="App screenshot"
                       src="/quickbooks_at_office.avif"
-                      //   width={2432}
-                      //   height={1442}
                       fill={true}
                       className="w-304 bg-gray-50 shadow-xl ring-1 ring-gray-900/10 rounded-lg"
                       style={{ objectFit: "cover", objectPosition: "center" }}
@@ -52,9 +42,9 @@ export default function Services() {
         {/* Feature section */}
         <div className="px-4 mx-auto mt-16 max-w-7xl sm:mt-16 lg:px-8">
           <div className="mx-auto max-w-2xl lg:max-w-4xl">
-            <h2 className="text-base/7 font-semibold text-indigo-600 dark:text-indigo-400">
+            <h1 className="text-base/7 font-semibold text-indigo-600 dark:text-indigo-400">
               Professional Bookkeeping Services
-            </h2>
+            </h1>
             <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl lg:text-balance dark:text-white">
               Bookkeeping Services
             </p>
@@ -74,9 +64,8 @@ export default function Services() {
               all small businesses. Its ability to integrate with tools like
               time tracking, expense reporting, and online bill pay creates a
               more efficient system, boosting accuracy while saving time and
-              money. As Advanced Certified QuickBooks ProAdvisors,
-              we’re equipped to provide the right solution for your unique
-              needs.
+              money. As Advanced Certified QuickBooks ProAdvisors, we’re
+              equipped to provide the right solution for your unique needs.
             </p>
           </div>
         </div>

@@ -11,14 +11,14 @@ const TestimonialsCarousel = ({ testimonials }) => {
 
   // Handle previous slide
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => 
+    setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? carouselItems.length - 1 : prevIndex - 1
     );
   };
 
   // Handle next slide
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => 
+    setCurrentIndex((prevIndex) =>
       prevIndex === carouselItems.length - 1 ? 0 : prevIndex + 1
     );
   };
@@ -38,11 +38,11 @@ const TestimonialsCarousel = ({ testimonials }) => {
         {/* Background image */}
         <img
           alt=""
-          src="https://images.unsplash.com/photo-1601381718415-a05fb0a261f3?ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8ODl8fHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1216&q=80"
+          src="/sundance-mountain-resort.jpg"
           className="absolute inset-0 size-full object-cover brightness-150 saturate-0"
         />
         <div className="absolute inset-0 bg-gray-900/90 mix-blend-multiply" />
-        
+
         {/* Decorative elements */}
         <div
           aria-hidden="true"
@@ -68,17 +68,14 @@ const TestimonialsCarousel = ({ testimonials }) => {
             className="aspect-1097/845 w-274.25 bg-linear-to-r from-[#ff4694] to-[#776fff] opacity-25 dark:opacity-20"
           />
         </div>
-        
+
         {/* Content */}
         <div className="relative mx-auto max-w-2xl lg:mx-0">
-          {/* Logo section - replace with your own logo or remove */}
-          <div className="flex items-center">
-            {/* <h3 className="text-xl font-semibold text-white">Breeze Bookkeeping</h3> */}
-          </div>
-          
+
+
           {/* Testimonial content */}
           {carouselItems.map((item, index) => (
-            <div 
+            <div
               key={index}
               className={`transition-opacity duration-700 ease-in-out ${
                 index === currentIndex ? "opacity-100" : "opacity-0 hidden"
@@ -95,17 +92,17 @@ const TestimonialsCarousel = ({ testimonials }) => {
               </figure>
             </div>
           ))}
-          
+
           {/* Navigation controls */}
           <div className="mt-10 flex justify-between">
-            <button 
+            <button
               onClick={prevSlide}
               className="rounded-full bg-white/10 p-2 text-white hover:bg-white/20 focus:outline-none"
               aria-label="Previous testimonial"
             >
               <ChevronLeftIcon className="h-5 w-5" />
             </button>
-            
+
             {/* Indicators */}
             <div className="flex items-center space-x-2">
               {carouselItems.map((_, index) => (
@@ -119,8 +116,8 @@ const TestimonialsCarousel = ({ testimonials }) => {
                 />
               ))}
             </div>
-            
-            <button 
+
+            <button
               onClick={nextSlide}
               className="rounded-full bg-white/10 p-2 text-white hover:bg-white/20 focus:outline-none"
               aria-label="Next testimonial"
