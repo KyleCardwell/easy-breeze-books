@@ -22,23 +22,6 @@ export default function Navigation() {
         className="flex items-center justify-between p-6 lg:px-8"
       >
         <div className="flex lg:flex-1">
-          {/* <Link href="#" className="-m-1.5 p-1.5" suppressHydrationWarning>
-            <span className="sr-only">Your Company</span>
-            <Image
-              alt=""
-              src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
-              className="h-8 w-auto dark:hidden"
-              width={200}
-              height={200}
-            />
-            <Image
-              alt=""
-              src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
-              className="h-8 w-auto not-dark:hidden"
-              width={200}
-              height={200}
-            />
-          </Link> */}
           <p className="text-2xl font-semibold">Breeze Bookkeeping</p>
         </div>
         <div className="flex md:hidden">
@@ -70,11 +53,6 @@ export default function Navigation() {
             );
           })}
         </div>
-        {/* <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="text-sm/6 font-semibold text-gray-900 dark:text-white">
-              Log in <span aria-hidden="true">&rarr;</span>
-            </a>
-          </div> */}
       </nav>
       <Dialog
         open={mobileMenuOpen}
@@ -84,19 +62,6 @@ export default function Navigation() {
         <div className="fixed inset-0 z-50" />
         <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 dark:bg-gray-900 dark:sm:ring-gray-100/10">
           <div className="flex items-center justify-between">
-            {/* <Link href="#" className="-m-1.5 p-1.5" suppressHydrationWarning>
-              <span className="sr-only">Your Company</span>
-              <Image
-                alt=""
-                src="https://tailwindcss.com/plus-assetImage/logos/mark.svg?color=indigo&shade=600"
-                className="h-8 w-auto dark:hidden"
-              />
-              <Image
-                alt=""
-                src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
-                className="h-8 w-auto not-dark:hidden"
-              />
-            </Link> */}
             <button
               type="button"
               onClick={() => setMobileMenuOpen(false)}
@@ -121,20 +86,13 @@ export default function Navigation() {
                           : "text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5"
                       }`}
                       suppressHydrationWarning
+                      onClick={() => setMobileMenuOpen(false)}
                     >
                       {item.name}
                     </Link>
                   );
                 })}
               </div>
-              {/* <div className="py-6">
-                  <a
-                    href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5"
-                  >
-                    Log in
-                  </a>
-                </div> */}
             </div>
           </div>
         </DialogPanel>
