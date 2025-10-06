@@ -19,10 +19,18 @@ export default function Navigation() {
       </div>
       <nav
         aria-label="Global"
-        className="flex items-center justify-between p-6 lg:px-8"
+        className="flex items-start justify-between p-6 lg:px-8"
       >
         <div className="flex lg:flex-1">
-          <p className="text-2xl font-semibold">Breeze Bookkeeping</p>
+          {/* <p className="text-2xl font-semibold">Breeze Bookkeeping</p> */}
+          <Image
+            src="/breeze_bookkeeping_logo.svg"
+            alt="Breeze Bookkeeping"
+            width={500}
+            height={256}
+            className="max-w-1/4 sm:max-w-1/5 lg:max-w-1/7 xl:max-w-1/8 drop-shadow-lg"
+            priority
+          />
         </div>
         <div className="flex md:hidden">
           <button
@@ -34,7 +42,7 @@ export default function Navigation() {
             <Bars3Icon aria-hidden="true" className="size-6" />
           </button>
         </div>
-        <div className="hidden md:flex md:gap-x-12">
+        <div className="hidden md:flex md:gap-x-12 items-start">
           {navigation.map((item) => {
             const isActive = pathname === item.href;
             return (

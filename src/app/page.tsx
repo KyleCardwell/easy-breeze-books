@@ -27,9 +27,17 @@ export default function Homepage() {
               <div className="mt-16 flow-root sm:mt-24 relative">
                 <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-gray-900/10 ring-inset lg:-m-4 lg:rounded-2xl lg:p-4 dark:bg-white/2.5 dark:ring-white/10">
                   <div className="absolute md:top-6 md:left-6 z-10 pl-6 sm:pl-8 sm:w-1/2 h-full">
-                    <div className="flex flex-col gap-2 w-full h-2/3 items-center justify-center">
-                      <h1 className="text-xl sm:text-3xl md:text-6xl xl:text-8xl font-semibold tracking-tight text-balance text-white drop-shadow-lg">
-                        Breeze Bookkeeping
+                    <div className="flex flex-col gap-2 w-1/2 sm:w-full h-2/3 items-center justify-center">
+                      <h1 className="contents">
+                        <span className="sr-only">Breeze Bookkeeping</span>
+                        <Image
+                          src="/breeze_bookkeeping_logo.svg"
+                          alt=""
+                          width={500}
+                          height={256}
+                          className="pl-6 mt-4 w-4/5 sm:w-3/4 sm:max-w-sm md:max-w-md drop-shadow-lg"
+                          priority
+                        />
                       </h1>
                       <p className="hidden lg:block mt-4 text-sm md:text-md font-medium text-pretty text-white sm:text-xl/8 drop-shadow-lg">
                         ~ Effortless accounting that feels like a breeze ~
