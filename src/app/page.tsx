@@ -35,7 +35,7 @@ export default function Homepage() {
                           alt=""
                           width={500}
                           height={256}
-                          className="pl-6 mt-4 w-4/5 sm:w-3/4 sm:max-w-sm md:max-w-md drop-shadow-lg"
+                          className="pl-6 mt-4 w-4/5 sm:w-3/4 sm:max-w-sm md:max-w-md drop-shadow-lg invert"
                           priority
                         />
                       </h1>
