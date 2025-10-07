@@ -28,7 +28,7 @@ export default function Navigation() {
             alt="Breeze Bookkeeping"
             width={500}
             height={256}
-            className="max-w-1/4 sm:max-w-1/5 lg:max-w-1/7 xl:max-w-1/8 drop-shadow-lg"
+            className="max-w-1/4 sm:max-w-1/5 lg:max-w-1/7 xl:max-w-1/8 drop-shadow-lg dark:invert"
             priority
           />
         </div>
