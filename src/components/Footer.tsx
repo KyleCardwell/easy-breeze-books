@@ -9,8 +9,8 @@ const Footer = () => {
   const pathname = usePathname();
   
   return (
-    <footer className="relative mx-auto pt-32 max-w-7xl px-6 lg:px-8">
-      <div className="border-t border-gray-900/10 py-16 sm:py-24 lg:py-32 dark:border-white/10">
+    <footer className="relative mx-auto pt-16 max-w-7xl px-6 lg:px-8">
+      <div className="border-t border-gray-900/10 py-8 sm:py-14 lg:py-20 dark:border-white/10">
         <div className="xl:grid xl:grid-cols-2 xl:gap-8">
           {/* <img
             alt="Company name"
