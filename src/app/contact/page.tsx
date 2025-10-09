@@ -9,7 +9,7 @@ const Contact = () => {
 
   return (
     <div className="mx-auto mt-16 max-w-7xl sm:mt-20 lg:mt-24">
-      <div className="mx-auto max-w-2xl p-12 lg:max-w-4xl text-gray-900 dark:text-white">
+      <div className="mx-auto max-w-2xl p-6 sm:p-12 lg:max-w-4xl text-gray-900 dark:text-white">
         <h1 className="mt-4 text-4xl text-indigo-600 dark:text-indigo-400">
           SCHEDULE A PHONE CALL
         </h1>
@@ -50,10 +50,10 @@ const Contact = () => {
 
           {/* Accordion Content */}
           <div
-            className={`transition-all duration-300 ease-in-out overflow-hidden ${
+            className={`transition-all duration-300 ease-in-out ${
               isFormOpen
-                ? "max-h-[1200px] opacity-100 mt-6"
-                : "max-h-0 opacity-0"
+                ? "max-h-[2000px] opacity-100 mt-6"
+                : "max-h-0 opacity-0 overflow-hidden"
             }`}
           >
             <ContactForm />
