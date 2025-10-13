@@ -6,67 +6,6 @@ import { homePageServices } from "@/utils/constants";
 import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 
 export default function Homepage() {
-  const reviewSchema = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Breeze Bookkeeping",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5",
-      "reviewCount": "4"
-    },
-    "review": [
-      {
-        "@type": "Review",
-        "author": {
-          "@type": "Person",
-          "name": "Cory C"
-        },
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5"
-        },
-        "reviewBody": "I can't thank Darren at Breeze Bookkeeping enough. He helped me get my house cleaning business back on track after years of feeling overwhelmed with the books. He explains things in a way that actually makes sense, answers questions right away, and takes a lot of the stress off my shoulders. Super easy to work with and really dependable. I'd absolutely recommend him to other small business owners!"
-      },
-      {
-        "@type": "Review",
-        "author": {
-          "@type": "Person",
-          "name": "Kyle C"
-        },
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5"
-        },
-        "reviewBody": "Darren does amazing and precise work! He is incredibly responsive and a great person to work with."
-      },
-      {
-        "@type": "Review",
-        "author": {
-          "@type": "Person",
-          "name": "Jared S"
-        },
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5"
-        },
-        "reviewBody": "Breeze Bookkeeping is a fabulous company, they are timely, accurate, and very responsive to clients. I highly recommend them."
-      },
-      {
-        "@type": "Review",
-        "author": {
-          "@type": "Person",
-          "name": "Pete H"
-        },
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5"
-        },
-        "reviewBody": "Darren is amazing with numbers! He was born to work among them! Very easy to work with and talk to as well. Very professional."
-      }
-    ]
-  };
-
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -76,7 +15,7 @@ export default function Homepage() {
         "name": "What bookkeeping services does Breeze Bookkeeping offer?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Breeze Bookkeeping offers comprehensive bookkeeping services including account reconciliation, transaction categorization, payroll services, invoicing, accounts payable, financial statement analysis, and QuickBooks Online consulting. We serve businesses in Herriman, UT, Salt Lake City, and nationwide."
+          "text": "Breeze Bookkeeping offers comprehensive bookkeeping services including account reconciliation, transaction categorization, payroll services, invoicing, accounts payable, financial statement analysis, and QuickBooks Online consulting. We serve businesses in Herriman, UT, Salt Lake County, and nationwide."
         }
       },
       {
@@ -120,11 +59,6 @@ export default function Homepage() {
         id="faq-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <Script
-        id="review-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
       />
       <main className="isolate">
         {/* Hero section */}
