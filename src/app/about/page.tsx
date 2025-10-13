@@ -1,4 +1,23 @@
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Darren Cardwell",
+  description: "Meet Darren Cardwell, QuickBooks ProAdvisor and founder of Breeze Bookkeeping in Herriman, UT. Providing professional bookkeeping services to businesses across the United States.",
+  openGraph: {
+    title: "About Darren Cardwell | Breeze Bookkeeping",
+    description: "Meet Darren Cardwell, QuickBooks ProAdvisor and founder of Breeze Bookkeeping in Herriman, UT.",
+    url: "https://easybreezebooks.com/about",
+    images: [
+      {
+        url: "/DC photo.avif",
+        width: 800,
+        height: 600,
+        alt: "Darren Cardwell, QuickBooks ProAdvisor"
+      }
+    ]
+  }
+};
 
 export default function About() {
   return (

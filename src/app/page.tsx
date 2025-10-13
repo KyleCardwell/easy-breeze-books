@@ -1,12 +1,65 @@
 "use client";
 
 import Image from "next/image";
+import Script from "next/script";
 import { homePageServices } from "@/utils/constants";
 import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 
 export default function Homepage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What bookkeeping services does Breeze Bookkeeping offer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Breeze Bookkeeping offers comprehensive bookkeeping services including account reconciliation, transaction categorization, payroll services, invoicing, accounts payable, financial statement analysis, and QuickBooks Online consulting. We serve businesses in Herriman, UT, Salt Lake County, and nationwide."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are you a certified QuickBooks ProAdvisor?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Darren Cardwell is an Advanced Certified QuickBooks Online ProAdvisor. This certification ensures expert knowledge of QuickBooks Online and the ability to provide the best solutions for your business needs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you work with businesses outside of Utah?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! While we're based in Herriman, UT near Salt Lake City, we work with businesses all over the United States thanks to secure, cloud-based technology. We can manage your bookkeeping remotely with the same level of service and accuracy."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much do your bookkeeping services cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our pricing is affordable and customized based on your specific business needs. We offer a free phone consultation to discuss your bookkeeping requirements and provide a transparent quote. Schedule a call to learn how we can save you money while providing accurate, professional bookkeeping."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What makes Breeze Bookkeeping different from other bookkeepers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Breeze Bookkeeping focuses on making bookkeeping fast, accurate, and affordable. As a QuickBooks ProAdvisor, we integrate the best financial apps to streamline your systems. We provide financial clarity and confidence so you can make smart business decisions without stress, backed by proven systems that save time and cut costs."
+        }
+      }
+    ]
+  };
+
   return (
     <div className="">
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <main className="isolate">
         {/* Hero section */}
         <div className="relative pt-14">
@@ -32,7 +85,7 @@ export default function Homepage() {
                         <span className="sr-only">Breeze Bookkeeping</span>
                         <Image
                           src="/breeze_bookkeeping_logo.svg"
-                          alt=""
+                          alt="Breeze Bookkeeping - Professional Bookkeeping Services"
                           width={500}
                           height={256}
                           className="pl-6 mt-4 w-4/5 sm:w-3/4 sm:max-w-sm md:max-w-md drop-shadow-lg invert"
@@ -55,7 +108,7 @@ export default function Homepage() {
                     </div>
                   </div>
                   <Image
-                    alt="App screenshot"
+                    alt="Darren Cardwell, QuickBooks ProAdvisor and founder of Breeze Bookkeeping"
                     src="/darren_1.jpg"
                     width={2432}
                     height={1442}

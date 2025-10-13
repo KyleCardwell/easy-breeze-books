@@ -1,6 +1,26 @@
 import { CheckIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
 import { services } from "@/utils/constants";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Bookkeeping Services",
+  description: "Professional bookkeeping services including QuickBooks consulting, payroll, account reconciliation, financial statements, and more. Serving Herriman, UT, Salt Lake City, and businesses nationwide.",
+  keywords: ["bookkeeping services", "QuickBooks consulting", "payroll services", "account reconciliation", "financial statements", "invoicing", "bill pay", "Herriman UT", "Salt Lake City"],
+  openGraph: {
+    title: "Bookkeeping Services | Breeze Bookkeeping",
+    description: "Professional bookkeeping services including QuickBooks consulting, payroll, account reconciliation, and financial statements.",
+    url: "https://easybreezebooks.com/services",
+    images: [
+      {
+        url: "/quickbooks_at_office.avif",
+        width: 1200,
+        height: 630,
+        alt: "QuickBooks Bookkeeping Services"
+      }
+    ]
+  }
+};
 
 export default function Services() {
   return (
@@ -26,7 +46,7 @@ export default function Services() {
                 <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-gray-900/10 ring-inset lg:-m-4 lg:rounded-2xl lg:p-4 dark:bg-white/2.5 dark:ring-white/10">
                   <div className="h-[450px] overflow-hidden relative">
                     <Image
-                      alt="App screenshot"
+                      alt="Professional bookkeeping services with QuickBooks Online"
                       src="/quickbooks_at_office.avif"
                       fill={true}
                       className="w-304 bg-gray-50 shadow-xl ring-1 ring-gray-900/10 rounded-lg"
