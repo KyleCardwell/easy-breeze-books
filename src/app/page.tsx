@@ -1,12 +1,131 @@
 "use client";
 
 import Image from "next/image";
+import Script from "next/script";
 import { homePageServices } from "@/utils/constants";
 import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 
 export default function Homepage() {
+  const reviewSchema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Breeze Bookkeeping",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "4"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "author": {
+          "@type": "Person",
+          "name": "Cory C"
+        },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5"
+        },
+        "reviewBody": "I can't thank Darren at Breeze Bookkeeping enough. He helped me get my house cleaning business back on track after years of feeling overwhelmed with the books. He explains things in a way that actually makes sense, answers questions right away, and takes a lot of the stress off my shoulders. Super easy to work with and really dependable. I'd absolutely recommend him to other small business owners!"
+      },
+      {
+        "@type": "Review",
+        "author": {
+          "@type": "Person",
+          "name": "Kyle C"
+        },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5"
+        },
+        "reviewBody": "Darren does amazing and precise work! He is incredibly responsive and a great person to work with."
+      },
+      {
+        "@type": "Review",
+        "author": {
+          "@type": "Person",
+          "name": "Jared S"
+        },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5"
+        },
+        "reviewBody": "Breeze Bookkeeping is a fabulous company, they are timely, accurate, and very responsive to clients. I highly recommend them."
+      },
+      {
+        "@type": "Review",
+        "author": {
+          "@type": "Person",
+          "name": "Pete H"
+        },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5"
+        },
+        "reviewBody": "Darren is amazing with numbers! He was born to work among them! Very easy to work with and talk to as well. Very professional."
+      }
+    ]
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What bookkeeping services does Breeze Bookkeeping offer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Breeze Bookkeeping offers comprehensive bookkeeping services including account reconciliation, transaction categorization, payroll services, invoicing, accounts payable, financial statement analysis, and QuickBooks Online consulting. We serve businesses in Herriman, UT, Salt Lake City, and nationwide."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are you a certified QuickBooks ProAdvisor?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Darren Cardwell is an Advanced Certified QuickBooks Online ProAdvisor. This certification ensures expert knowledge of QuickBooks Online and the ability to provide the best solutions for your business needs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you work with businesses outside of Utah?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! While we're based in Herriman, UT near Salt Lake City, we work with businesses all over the United States thanks to secure, cloud-based technology. We can manage your bookkeeping remotely with the same level of service and accuracy."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much do your bookkeeping services cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our pricing is affordable and customized based on your specific business needs. We offer a free phone consultation to discuss your bookkeeping requirements and provide a transparent quote. Schedule a call to learn how we can save you money while providing accurate, professional bookkeeping."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What makes Breeze Bookkeeping different from other bookkeepers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Breeze Bookkeeping focuses on making bookkeeping fast, accurate, and affordable. As a QuickBooks ProAdvisor, we integrate the best financial apps to streamline your systems. We provide financial clarity and confidence so you can make smart business decisions without stress, backed by proven systems that save time and cut costs."
+        }
+      }
+    ]
+  };
+
   return (
     <div className="">
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <Script
+        id="review-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
+      />
       <main className="isolate">
         {/* Hero section */}
         <div className="relative pt-14">
@@ -32,7 +151,7 @@ export default function Homepage() {
                         <span className="sr-only">Breeze Bookkeeping</span>
                         <Image
                           src="/breeze_bookkeeping_logo.svg"
-                          alt=""
+                          alt="Breeze Bookkeeping - Professional Bookkeeping Services"
                           width={500}
                           height={256}
                           className="pl-6 mt-4 w-4/5 sm:w-3/4 sm:max-w-sm md:max-w-md drop-shadow-lg invert"
@@ -55,7 +174,7 @@ export default function Homepage() {
                     </div>
                   </div>
                   <Image
-                    alt="App screenshot"
+                    alt="Darren Cardwell, QuickBooks ProAdvisor and founder of Breeze Bookkeeping"
                     src="/darren_1.jpg"
                     width={2432}
                     height={1442}

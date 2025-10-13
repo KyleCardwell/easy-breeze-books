@@ -37,7 +37,7 @@ const TestimonialsCarousel = ({ testimonials }) => {
       <div className="relative overflow-hidden bg-gray-900 px-6 py-20 shadow-xl sm:rounded-3xl sm:px-10 sm:py-24 md:px-12 lg:px-20 dark:bg-black dark:shadow-none dark:after:pointer-events-none dark:after:absolute dark:after:inset-0 dark:after:inset-ring dark:after:inset-ring-white/10 dark:after:sm:rounded-3xl">
         {/* Background image */}
         <img
-          alt=""
+          alt="Sundance Mountain Resort background"
           src="/sundance-mountain-resort.jpg"
           className="absolute inset-0 size-full object-cover brightness-150 saturate-0"
         />
