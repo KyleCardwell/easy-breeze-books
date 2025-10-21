@@ -21,7 +21,22 @@ export const metadata: Metadata = {
     template: "%s | Breeze Bookkeeping"
   },
   description: "Professional bookkeeping services in Herriman, UT and Salt Lake City area. QuickBooks Online ProAdvisor offering affordable bookkeeping, payroll, and financial statement analysis for small businesses nationwide.",
-  keywords: ["bookkeeping", "QuickBooks ProAdvisor", "Herriman UT", "Salt Lake City", "bookkeeper", "payroll services", "small business accounting", "financial statements", "QuickBooks Online", "Utah bookkeeper"],
+  keywords: [
+    "bookkeeping services Herriman UT",
+    "QuickBooks ProAdvisor Salt Lake City",
+    "bookkeeper near me",
+    "small business bookkeeping Utah",
+    "affordable bookkeeping services",
+    "QuickBooks Online consultant",
+    "payroll services Herriman",
+    "financial statement analysis",
+    "account reconciliation services",
+    "virtual bookkeeper Utah",
+    "certified QuickBooks ProAdvisor",
+    "bookkeeping for small business",
+    "Utah bookkeeping services",
+    "Salt Lake County bookkeeper"
+  ],
   authors: [{ name: "Darren Cardwell" }],
   creator: "Breeze Bookkeeping",
   publisher: "Breeze Bookkeeping",
@@ -74,10 +89,12 @@ export default function RootLayout({
 }>) {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "ProfessionalService", "AccountingService"],
     "@id": "https://www.easybreezebooks.com",
     "name": "Breeze Bookkeeping",
+    "alternateName": "Breeze Bookkeeping Services",
     "image": "https://www.easybreezebooks.com/breeze_bookkeeping_logo.svg",
+    "logo": "https://www.easybreezebooks.com/breeze_bookkeeping_logo.svg",
     "description": "Professional bookkeeping services in Herriman, UT and Salt Lake City area. QuickBooks Online ProAdvisor offering affordable bookkeeping, payroll, and financial statement analysis.",
     "url": "https://www.easybreezebooks.com",
     "telephone": "",
@@ -96,29 +113,82 @@ export default function RootLayout({
     "areaServed": [
       {
         "@type": "City",
-        "name": "Herriman"
+        "name": "Herriman",
+        "containedIn": {
+          "@type": "State",
+          "name": "Utah"
+        }
       },
       {
         "@type": "City",
-        "name": "Salt Lake City"
+        "name": "Salt Lake City",
+        "containedIn": {
+          "@type": "State",
+          "name": "Utah"
+        }
+      },
+      {
+        "@type": "State",
+        "name": "Utah"
       },
       {
         "@type": "Country",
         "name": "United States"
       }
     ],
-    "serviceType": [
-      "Bookkeeping Services",
-      "QuickBooks Consulting",
-      "Payroll Services",
-      "Financial Statement Analysis",
-      "Account Reconciliation"
-    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Bookkeeping Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "QuickBooks Consulting",
+            "description": "Expert QuickBooks Online setup, training, and consulting"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Bookkeeping Services",
+            "description": "Monthly bookkeeping, account reconciliation, and transaction categorization"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Payroll Services",
+            "description": "Complete payroll processing and management"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Financial Statement Analysis",
+            "description": "Detailed financial reporting and analysis for business insights"
+          }
+        }
+      ]
+    },
     "founder": {
       "@type": "Person",
       "name": "Darren Cardwell",
-      "jobTitle": "QuickBooks ProAdvisor"
-    }
+      "jobTitle": "QuickBooks ProAdvisor",
+      "description": "Advanced Certified QuickBooks Online ProAdvisor"
+    },
+    "knowsAbout": [
+      "Bookkeeping",
+      "QuickBooks Online",
+      "Payroll",
+      "Financial Statements",
+      "Account Reconciliation",
+      "Small Business Accounting"
+    ],
+    "slogan": "Effortless accounting that feels like a breeze"
   };
 
   return (
