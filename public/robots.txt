@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://easybreezebooks.com/sitemap.xml
+Sitemap: https://www.easybreezebooks.com/sitemap.xml

@@ -4,10 +4,13 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About Darren Cardwell",
   description: "Meet Darren Cardwell, QuickBooks ProAdvisor and founder of Breeze Bookkeeping in Herriman, UT. Providing professional bookkeeping services to businesses across the United States.",
+  alternates: {
+    canonical: "https://www.easybreezebooks.com/about"
+  },
   openGraph: {
     title: "About Darren Cardwell | Breeze Bookkeeping",
     description: "Meet Darren Cardwell, QuickBooks ProAdvisor and founder of Breeze Bookkeeping in Herriman, UT.",
-    url: "https://easybreezebooks.com/about",
+    url: "https://www.easybreezebooks.com/about",
     images: [
       {
         url: "/DC photo.avif",

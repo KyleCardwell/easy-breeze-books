@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://easybreezebooks.com'),
+  metadataBase: new URL('https://www.easybreezebooks.com'),
   title: {
     default: "Breeze Bookkeeping | QuickBooks ProAdvisor in Herriman, UT",
     template: "%s | Breeze Bookkeeping"
@@ -25,10 +25,13 @@ export const metadata: Metadata = {
   authors: [{ name: "Darren Cardwell" }],
   creator: "Breeze Bookkeeping",
   publisher: "Breeze Bookkeeping",
+  alternates: {
+    canonical: "https://www.easybreezebooks.com"
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://easybreezebooks.com",
+    url: "https://www.easybreezebooks.com",
     siteName: "Breeze Bookkeeping",
     title: "Breeze Bookkeeping | QuickBooks ProAdvisor in Herriman, UT",
     description: "Professional bookkeeping services in Herriman, UT and Salt Lake City area. QuickBooks Online ProAdvisor offering affordable bookkeeping, payroll, and financial statement analysis.",
@@ -72,11 +75,11 @@ export default function RootLayout({
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://easybreezebooks.com",
+    "@id": "https://www.easybreezebooks.com",
     "name": "Breeze Bookkeeping",
-    "image": "https://easybreezebooks.com/breeze_bookkeeping_logo.svg",
+    "image": "https://www.easybreezebooks.com/breeze_bookkeeping_logo.svg",
     "description": "Professional bookkeeping services in Herriman, UT and Salt Lake City area. QuickBooks Online ProAdvisor offering affordable bookkeeping, payroll, and financial statement analysis.",
-    "url": "https://easybreezebooks.com",
+    "url": "https://www.easybreezebooks.com",
     "telephone": "",
     "priceRange": "$$",
     "address": {
