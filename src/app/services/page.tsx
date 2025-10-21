@@ -7,10 +7,13 @@ export const metadata: Metadata = {
   title: "Bookkeeping Services",
   description: "Professional bookkeeping services including QuickBooks consulting, payroll, account reconciliation, financial statements, and more. Serving Herriman, UT, Salt Lake City, and businesses nationwide.",
   keywords: ["bookkeeping services", "QuickBooks consulting", "payroll services", "account reconciliation", "financial statements", "invoicing", "bill pay", "Herriman UT", "Salt Lake City"],
+  alternates: {
+    canonical: "https://www.easybreezebooks.com/services"
+  },
   openGraph: {
     title: "Bookkeeping Services | Breeze Bookkeeping",
     description: "Professional bookkeeping services including QuickBooks consulting, payroll, account reconciliation, and financial statements.",
-    url: "https://easybreezebooks.com/services",
+    url: "https://www.easybreezebooks.com/services",
     images: [
       {
         url: "/quickbooks_at_office.avif",

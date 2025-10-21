@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "easybreezebooks.com"
+        }
+      ],
+      "destination": "https://www.easybreezebooks.com/:path*",
+      "permanent": true
+    }
+  ]
+}
