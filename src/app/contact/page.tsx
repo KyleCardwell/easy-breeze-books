@@ -26,7 +26,7 @@ const Contact = () => {
             href="https://calendly.com/breezebookkeeping/30min"
             className="text-lg/8 text-white dark:text-indigo-600 hover:text-indigo-500 dark:hover:text-indigo-300 font-semibold"
           >
-            <div className="mt-8 rounded bg-indigo-600 text-white py-2 px-4 dark:bg-white dark:text-indigo-600 hover:bg-indigo-500 dark:hover:bg-indigo-500">
+            <div className="mt-8 rounded bg-indigo-600 text-white py-2 px-8 dark:bg-white dark:text-indigo-600 hover:bg-indigo-500 dark:hover:bg-indigo-500">
               Schedule Call
             </div>
           </a>
