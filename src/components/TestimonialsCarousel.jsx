@@ -34,7 +34,7 @@ const TestimonialsCarousel = ({ testimonials }) => {
 
   return (
     <div className="mx-auto max-w-7xl">
-      <div className="relative overflow-hidden bg-gray-900 px-6 py-20 shadow-xl sm:rounded-3xl sm:px-10 sm:py-24 md:px-12 lg:px-20 dark:bg-black dark:shadow-none dark:after:pointer-events-none dark:after:absolute dark:after:inset-0 dark:after:inset-ring dark:after:inset-ring-white/10 dark:after:sm:rounded-3xl">
+      <div className="relative overflow-hidden px-6 py-20 sm:rounded-3xl sm:px-10 sm:py-24 md:px-12 lg:px-20 bg-black after:pointer-events-none after:absolute after:inset-0 after:inset-ring after:inset-ring-white/10 after:sm:rounded-3xl">
         {/* Background image */}
         <img
           alt="Sundance Mountain Resort background"
@@ -53,7 +53,7 @@ const TestimonialsCarousel = ({ testimonials }) => {
               clipPath:
                 "polygon(73.6% 48.6%, 91.7% 88.5%, 100% 53.9%, 97.4% 18.1%, 92.5% 15.4%, 75.7% 36.3%, 55.3% 52.8%, 46.5% 50.9%, 45% 37.4%, 50.3% 13.1%, 21.3% 36.2%, 0.1% 0.1%, 5.4% 49.1%, 21.4% 36.4%, 58.9% 100%, 73.6% 48.6%)",
             }}
-            className="aspect-1097/845 w-274.25 bg-linear-to-r from-[#ff4694] to-[#776fff] opacity-[0.45] dark:opacity-[0.30]"
+            className="aspect-1097/845 w-274.25 bg-linear-to-r from-[#ff4694] to-[#776fff] opacity-[0.30]"
           />
         </div>
         <div
@@ -65,7 +65,7 @@ const TestimonialsCarousel = ({ testimonials }) => {
               clipPath:
                 "polygon(73.6% 48.6%, 91.7% 88.5%, 100% 53.9%, 97.4% 18.1%, 92.5% 15.4%, 75.7% 36.3%, 55.3% 52.8%, 46.5% 50.9%, 45% 37.4%, 50.3% 13.1%, 21.3% 36.2%, 0.1% 0.1%, 5.4% 49.1%, 21.4% 36.4%, 58.9% 100%, 73.6% 48.6%)",
             }}
-            className="aspect-1097/845 w-274.25 bg-linear-to-r from-[#ff4694] to-[#776fff] opacity-25 dark:opacity-20"
+            className="aspect-1097/845 w-274.25 bg-linear-to-r from-[#ff4694] to-[#776fff] opacity-20"
           />
         </div>
 
@@ -85,7 +85,7 @@ const TestimonialsCarousel = ({ testimonials }) => {
                 <blockquote className="mt-6 text-lg font-semibold text-white sm:text-xl/8">
                   <p>"{item.testimonial}"</p>
                 </blockquote>
-                <figcaption className="mt-6 text-base text-white dark:text-gray-200">
+                <figcaption className="mt-6 text-base text-gray-200">
                   <div className="font-semibold">{item.name}</div>
                   <div className="mt-1">{item.title}</div>
                 </figcaption>

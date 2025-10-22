@@ -26,38 +26,38 @@ export const blogPosts: BlogPost[] = [
       "affordable bookkeeping services",
     ],
     content: `
-      <p class="text-xl text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+      <p class="text-xl text-gray-300 leading-relaxed mb-6">
         If you&apos;re a small business owner in Utah, you&apos;ve probably wondered: "How much should I budget for bookkeeping?" The answer depends on several factors, but I&apos;ll break down what you can expect to pay and what influences the cost.
       </p>
 
-      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Average Bookkeeping Costs</h2>
+      <h2 class="text-2xl font-bold text-white mb-6">Average Bookkeeping Costs</h2>
       <p>Whether you&apos;re in Utah (Herriman, Salt Lake City area) or anywhere nationwide, professional bookkeeping services typically range from:</p>
       
-      <div class="bg-indigo-50 dark:bg-indigo-900/20 p-6 rounded-lg my-6 space-y-3">
+      <div class="bg-indigo-900/20 p-6 rounded-lg my-6 space-y-3">
         <div class="flex items-start gap-3">
           <span class="text-2xl">💰</span>
           <div>
-            <div class="font-bold text-indigo-900 dark:text-indigo-100">$300-$500/month</div>
-            <div class="text-indigo-800 dark:text-indigo-200">Basic bookkeeping for small businesses with simple transactions</div>
+            <div class="font-bold text-indigo-100">$300-$500/month</div>
+            <div class="text-indigo-200">Basic bookkeeping for small businesses with simple transactions</div>
           </div>
         </div>
         <div class="flex items-start gap-3">
           <span class="text-2xl">💼</span>
           <div>
-            <div class="font-bold text-indigo-900 dark:text-indigo-100">$500-$1,000/month</div>
-            <div class="text-indigo-800 dark:text-indigo-200">Standard bookkeeping for businesses with moderate complexity</div>
+            <div class="font-bold text-indigo-100">$500-$1,000/month</div>
+            <div class="text-indigo-200">Standard bookkeeping for businesses with moderate complexity</div>
           </div>
         </div>
         <div class="flex items-start gap-3">
           <span class="text-2xl">🏢</span>
           <div>
-            <div class="font-bold text-indigo-900 dark:text-indigo-100">$1,000-$2,500/month</div>
-            <div class="text-indigo-800 dark:text-indigo-200">Comprehensive services for larger businesses or complex needs</div>
+            <div class="font-bold text-indigo-100">$1,000-$2,500/month</div>
+            <div class="text-indigo-200">Comprehensive services for larger businesses or complex needs</div>
           </div>
         </div>
       </div>
 
-      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">What Affects Bookkeeping Costs?</h2>
+      <h2 class="text-2xl font-bold text-white mb-6">What Affects Bookkeeping Costs?</h2>
 
       <div class="space-y-6 my-8">
   <div class="flex gap-4">
@@ -65,8 +65,8 @@ export const blogPosts: BlogPost[] = [
       1
     </div>
     <div>
-      <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Transaction Volume</h3>
-      <p class="text-gray-600 dark:text-gray-400">The more transactions your business has each month, the more time it takes to categorize and reconcile them. A business with 50 transactions will cost less than one with 500.</p>
+      <h3 class="text-lg font-semibold text-white mb-2">Transaction Volume</h3>
+      <p class="text-gray-400">The more transactions your business has each month, the more time it takes to categorize and reconcile them. A business with 50 transactions will cost less than one with 500.</p>
     </div>
   </div>
 </div>
@@ -77,8 +77,8 @@ export const blogPosts: BlogPost[] = [
       2
     </div>
     <div>
-      <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Complexity of Your Business</h3>
-      <p class="text-gray-600 dark:text-gray-400">Factors that increase complexity (and cost) include:</p>
+      <h3 class="text-lg font-semibold text-white mb-2">Complexity of Your Business</h3>
+      <p class="text-gray-400">Factors that increase complexity (and cost) include:</p>
     </div>
     </div>
     <div class="pl-14">
@@ -114,8 +114,8 @@ export const blogPosts: BlogPost[] = [
       3
     </div>
     <div>
-      <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Services Included</h3>
-      <p class="text-gray-600 dark:text-gray-400">Basic bookkeeping might include just transaction categorization and reconciliation, while comprehensive services could include:</p>
+      <h3 class="text-lg font-semibold text-white mb-2">Services Included</h3>
+      <p class="text-gray-400">Basic bookkeeping might include just transaction categorization and reconciliation, while comprehensive services could include:</p>
     </div>
   </div>
   <div class="pl-14">
@@ -144,7 +144,7 @@ export const blogPosts: BlogPost[] = [
 </div>
 </div>
 
-      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">DIY vs. Professional Bookkeeping</h2>
+      <h2 class="text-2xl font-bold text-white mb-6">DIY vs. Professional Bookkeeping</h2>
       <p>While DIY bookkeeping might seem cheaper, consider the hidden costs:</p>
       <ul class="space-y-2 my-4">
         <li class="flex items-start gap-2">
@@ -161,14 +161,14 @@ export const blogPosts: BlogPost[] = [
         </li>
       </ul>
 
-      <div class="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-600 p-6 my-6 rounded-r-lg">
-        <h3 class="text-lg font-semibold text-blue-900 dark:text-blue-100 mb-2">💡 Pro Tip</h3>
-        <p class="text-blue-800 dark:text-blue-200">
+      <div class="bg-blue-900/20 border-l-4 border-blue-600 p-6 my-6 rounded-r-lg">
+        <h3 class="text-lg font-semibold text-blue-100 mb-2">💡 Pro Tip</h3>
+        <p class="text-blue-200">
           Calculate your true DIY cost: (Hours spent per month × Your hourly rate) + Risk of errors. Many business owners find that professional bookkeeping actually <em>saves</em> them money!
         </p>
       </div>
 
-      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">What You Get with Breeze Bookkeeping</h2>
+      <h2 class="text-2xl font-bold text-white mb-6">What You Get with Breeze Bookkeeping</h2>
       <p>At Breeze Bookkeeping, we serve clients in Utah and nationwide with transparent, affordable pricing tailored to your specific needs. As a QuickBooks ProAdvisor, I ensure your books are accurate, up-to-date, and optimized for tax savings.</p>
       <br />
       <p>Our services include:</p>
@@ -196,7 +196,7 @@ export const blogPosts: BlogPost[] = [
   </li>
 </ul>
       
-      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Is Professional Bookkeeping Worth It?</h2>
+      <h2 class="text-2xl font-bold text-white mb-6">Is Professional Bookkeeping Worth It?</h2>
       <p>Most business owners find that professional bookkeeping pays for itself through:</p>
 
       <ul class="space-y-2 my-4">
@@ -218,7 +218,7 @@ export const blogPosts: BlogPost[] = [
   </li>
 </ul>
 
-      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Is Professional Bookkeeping Worth It?</h2>
+      <h2 class="text-2xl font-bold text-white mb-6">Is Professional Bookkeeping Worth It?</h2>
       <p>Most business owners find that professional bookkeeping pays for itself through:</p>
 
       <ul class="space-y-2 my-4">
@@ -244,7 +244,7 @@ export const blogPosts: BlogPost[] = [
         </li>
       </ul>
 
-      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Get a Custom Quote</h2>
+      <h2 class="text-2xl font-bold text-white mb-6">Get a Custom Quote</h2>
       <p>Every business is unique, and so are its bookkeeping needs. I offer free consultations to discuss your specific situation and provide a transparent quote with no hidden fees.</p>
     `,
   },
@@ -264,20 +264,20 @@ export const blogPosts: BlogPost[] = [
       "avoid QuickBooks problems",
     ],
     content: `
-      <p class="text-xl text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+      <p class="text-xl text-gray-300 leading-relaxed mb-6">
         As a QuickBooks ProAdvisor serving Utah and nationwide, I&apos;ve seen countless businesses make the same mistakes in QuickBooks. These errors can lead to inaccurate financial reports, tax problems, and poor business decisions. Here are the top 5 mistakes and how to avoid them.
       </p>
 
-      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">1. Not Reconciling Bank Accounts Regularly</h2>
+      <h2 class="text-2xl font-bold text-white mb-6">1. Not Reconciling Bank Accounts Regularly</h2>
       
-      <div class="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-600 p-6 my-6 rounded-r-lg">
-        <h3 class="text-lg font-semibold text-red-900 dark:text-red-100 mb-2">❌ The Mistake</h3>
-        <p class="text-red-800 dark:text-red-200">
+      <div class="bg-red-900/20 border-l-4 border-red-600 p-6 my-6 rounded-r-lg">
+        <h3 class="text-lg font-semibold text-red-100 mb-2">❌ The Mistake</h3>
+        <p class="text-red-200">
           Many business owners skip monthly bank reconciliations or do them irregularly.
         </p>
       </div>
       
-      <p class="font-semibold text-gray-900 dark:text-white mb-2">Why It&apos;s Costly:</p>
+      <p class="font-semibold text-white mb-2">Why It&apos;s Costly:</p>
       <ul class="space-y-2 my-4">
         <li class="flex items-start gap-2">
           <span class="text-red-500 mt-1">⚠️</span>
@@ -297,23 +297,23 @@ export const blogPosts: BlogPost[] = [
         </li>
       </ul>
 
-      <div class="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-600 p-6 my-6 rounded-r-lg">
-        <h3 class="text-lg font-semibold text-green-900 dark:text-green-100 mb-2">✅ The Fix</h3>
-        <p class="text-green-800 dark:text-green-200">
+      <div class="bg-green-900/20 border-l-4 border-green-600 p-6 my-6 rounded-r-lg">
+        <h3 class="text-lg font-semibold text-green-100 mb-2">✅ The Fix</h3>
+        <p class="text-green-200">
           Reconcile every bank account and credit card monthly. Set a recurring calendar reminder. If you&apos;re behind, catch up immediately—your future self will thank you.
         </p>
       </div>
 
-      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">2. Using the Wrong Account Types</h2>
+      <h2 class="text-2xl font-bold text-white mb-6">2. Using the Wrong Account Types</h2>
       
-      <div class="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-600 p-6 my-6 rounded-r-lg">
-        <h3 class="text-lg font-semibold text-red-900 dark:text-red-100 mb-2">❌ The Mistake</h3>
-        <p class="text-red-800 dark:text-red-200">
+      <div class="bg-red-900/20 border-l-4 border-red-600 p-6 my-6 rounded-r-lg">
+        <h3 class="text-lg font-semibold text-red-100 mb-2">❌ The Mistake</h3>
+        <p class="text-red-200">
           Setting up accounts with incorrect types (e.g., using an expense account instead of cost of goods sold).
         </p>
       </div>
       
-      <p class="font-semibold text-gray-900 dark:text-white mb-2">Why It&apos;s Costly:</p>
+      <p class="font-semibold text-white mb-2">Why It&apos;s Costly:</p>
       <ul class="space-y-2 my-4">
         <li class="flex items-start gap-2">
           <span class="text-red-500 mt-1">⚠️</span>
@@ -329,23 +329,23 @@ export const blogPosts: BlogPost[] = [
         </li>
       </ul>
 
-      <div class="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-600 p-6 my-6 rounded-r-lg">
-        <h3 class="text-lg font-semibold text-green-900 dark:text-green-100 mb-2">✅ The Fix</h3>
-        <p class="text-green-800 dark:text-green-200">
+      <div class="bg-green-900/20 border-l-4 border-green-600 p-6 my-6 rounded-r-lg">
+        <h3 class="text-lg font-semibold text-green-100 mb-2">✅ The Fix</h3>
+        <p class="text-green-200">
           Review your chart of accounts with a QuickBooks ProAdvisor. Make sure each account is the correct type and properly categorized.
         </p>
       </div>
 
-      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">3. Mixing Personal and Business Expenses</h2>
+      <h2 class="text-2xl font-bold text-white mb-6">3. Mixing Personal and Business Expenses</h2>
       
-      <div class="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-600 p-6 my-6 rounded-r-lg">
-        <h3 class="text-lg font-semibold text-red-900 dark:text-red-100 mb-2">❌ The Mistake</h3>
-        <p class="text-red-800 dark:text-red-200">
+      <div class="bg-red-900/20 border-l-4 border-red-600 p-6 my-6 rounded-r-lg">
+        <h3 class="text-lg font-semibold text-red-100 mb-2">❌ The Mistake</h3>
+        <p class="text-red-200">
           Recording personal expenses in your business QuickBooks file or using your business account for personal purchases.
         </p>
       </div>
       
-      <p class="font-semibold text-gray-900 dark:text-white mb-2">Why It&apos;s Costly:</p>
+      <p class="font-semibold text-white mb-2">Why It&apos;s Costly:</p>
       <ul class="space-y-2 my-4">
         <li class="flex items-start gap-2">
           <span class="text-red-500 mt-1">⚠️</span>
@@ -365,23 +365,23 @@ export const blogPosts: BlogPost[] = [
         </li>
       </ul>
 
-      <div class="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-600 p-6 my-6 rounded-r-lg">
-        <h3 class="text-lg font-semibold text-green-900 dark:text-green-100 mb-2">✅ The Fix</h3>
-        <p class="text-green-800 dark:text-green-200">
+      <div class="bg-green-900/20 border-l-4 border-green-600 p-6 my-6 rounded-r-lg">
+        <h3 class="text-lg font-semibold text-green-100 mb-2">✅ The Fix</h3>
+        <p class="text-green-200">
           Keep personal and business finances completely separate. If you accidentally use the business account for personal expenses, code them to Owner&apos;s Draw or Distributions, not business expenses.
         </p>
       </div>
 
-      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">4. Not Backing Up Your Data</h2>
+      <h2 class="text-2xl font-bold text-white mb-6">4. Not Backing Up Your Data</h2>
       
-      <div class="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-600 p-6 my-6 rounded-r-lg">
-        <h3 class="text-lg font-semibold text-red-900 dark:text-red-100 mb-2">❌ The Mistake</h3>
-        <p class="text-red-800 dark:text-red-200">
+      <div class="bg-red-900/20 border-l-4 border-red-600 p-6 my-6 rounded-r-lg">
+        <h3 class="text-lg font-semibold text-red-100 mb-2">❌ The Mistake</h3>
+        <p class="text-red-200">
           Assuming QuickBooks Online automatically protects all your data or not backing up QuickBooks Desktop.
         </p>
       </div>
       
-      <p class="font-semibold text-gray-900 dark:text-white mb-2">Why It&apos;s Costly:</p>
+      <p class="font-semibold text-white mb-2">Why It&apos;s Costly:</p>
       <ul class="space-y-2 my-4">
         <li class="flex items-start gap-2">
           <span class="text-red-500 mt-1">⚠️</span>
@@ -397,23 +397,23 @@ export const blogPosts: BlogPost[] = [
         </li>
       </ul>
 
-      <div class="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-600 p-6 my-6 rounded-r-lg">
-        <h3 class="text-lg font-semibold text-green-900 dark:text-green-100 mb-2">✅ The Fix</h3>
-        <p class="text-green-800 dark:text-green-200">
+      <div class="bg-green-900/20 border-l-4 border-green-600 p-6 my-6 rounded-r-lg">
+        <h3 class="text-lg font-semibold text-green-100 mb-2">✅ The Fix</h3>
+        <p class="text-green-200">
           For QuickBooks Desktop, create monthly backups stored in multiple locations. For QuickBooks Online, export reports regularly and consider using a third-party backup service.
         </p>
       </div>
 
-      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">5. Ignoring Undeposited Funds</h2>
+      <h2 class="text-2xl font-bold text-white mb-6">5. Ignoring Undeposited Funds</h2>
       
-      <div class="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-600 p-6 my-6 rounded-r-lg">
-        <h3 class="text-lg font-semibold text-red-900 dark:text-red-100 mb-2">❌ The Mistake</h3>
-        <p class="text-red-800 dark:text-red-200">
+      <div class="bg-red-900/20 border-l-4 border-red-600 p-6 my-6 rounded-r-lg">
+        <h3 class="text-lg font-semibold text-red-100 mb-2">❌ The Mistake</h3>
+        <p class="text-red-200">
           Letting payments pile up in the Undeposited Funds account without properly depositing them.
         </p>
       </div>
       
-      <p class="font-semibold text-gray-900 dark:text-white mb-2">Why It&apos;s Costly:</p>
+      <p class="font-semibold text-white mb-2">Why It&apos;s Costly:</p>
       <ul class="space-y-2 my-4">
         <li class="flex items-start gap-2">
           <span class="text-red-500 mt-1">⚠️</span>
@@ -429,16 +429,16 @@ export const blogPosts: BlogPost[] = [
         </li>
       </ul>
 
-      <div class="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-600 p-6 my-6 rounded-r-lg">
-        <h3 class="text-lg font-semibold text-green-900 dark:text-green-100 mb-2">✅ The Fix</h3>
-        <p class="text-green-800 dark:text-green-200">
+      <div class="bg-green-900/20 border-l-4 border-green-600 p-6 my-6 rounded-r-lg">
+        <h3 class="text-lg font-semibold text-green-100 mb-2">✅ The Fix</h3>
+        <p class="text-green-200">
           Clear out Undeposited Funds regularly by creating bank deposits that match your actual bank deposits. Group payments together exactly as they appear on your bank statement.
         </p>
       </div>
 
-      <div class="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-600 p-6 my-6 rounded-r-lg">
-        <h3 class="text-lg font-semibold text-blue-900 dark:text-blue-100 mb-2">💡 Bonus Tip: Not Using Classes or Locations</h3>
-        <p class="text-blue-800 dark:text-blue-200">
+      <div class="bg-blue-900/20 border-l-4 border-blue-600 p-6 my-6 rounded-r-lg">
+        <h3 class="text-lg font-semibold text-blue-100 mb-2">💡 Bonus Tip: Not Using Classes or Locations</h3>
+        <p class="text-blue-200">
           If you have multiple profit centers, departments, or locations, use QuickBooks&apos; class or location tracking features. This allows you to see profitability by segment and make better business decisions.
         </p>
       </div>
@@ -460,15 +460,15 @@ export const blogPosts: BlogPost[] = [
       "bookkeeper qualifications",
     ],
     content: `
-      <p class="text-xl text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+      <p class="text-xl text-gray-300 leading-relaxed mb-6">
         Choosing a bookkeeper is one of the most important decisions you&apos;ll make for your business. The right bookkeeper doesn&apos;t just record transactions—they become a trusted partner who helps you understand your finances and make better business decisions.
       </p>
 
       <p>Here&apos;s what to look for when hiring a bookkeeper, whether you&apos;re in Utah or anywhere nationwide.</p>
 
-      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">1. Certifications and Qualifications</h2>
+      <h2 class="text-2xl font-bold text-white mb-6">1. Certifications and Qualifications</h2>
       
-      <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">QuickBooks ProAdvisor Certification</h3>
+      <h3 class="text-xl font-semibold text-white mb-3">QuickBooks ProAdvisor Certification</h3>
       <p>If you use QuickBooks (and most small businesses do), look for a <strong>QuickBooks ProAdvisor</strong>. This certification means the bookkeeper has:</p>
       <ul class="space-y-2 my-4">
         <li class="flex items-start gap-2">
@@ -489,7 +489,7 @@ export const blogPosts: BlogPost[] = [
         </li>
       </ul>
 
-      <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Other Valuable Certifications</h3>
+      <h3 class="text-xl font-semibold text-white mb-3">Other Valuable Certifications</h3>
       <ul class="space-y-2 my-4">
         <li class="flex items-start gap-2">
           <span class="text-green-500 mt-1">✓</span>
@@ -501,38 +501,38 @@ export const blogPosts: BlogPost[] = [
         </li>
       </ul>
 
-      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">2. Industry Experience</h2>
+      <h2 class="text-2xl font-bold text-white mb-6">2. Industry Experience</h2>
       <p>Every industry has unique bookkeeping needs:</p>
       <ul class="space-y-2 my-4">
         <li class="flex items-start gap-2">
-          <span class="text-indigo-600 dark:text-indigo-400 mt-1">🔨</span>
+          <span class="text-indigo-400 mt-1">🔨</span>
           <div><strong>Contractors:</strong> Need job costing and progress billing</div>
         </li>
         <li class="flex items-start gap-2">
-          <span class="text-indigo-600 dark:text-indigo-400 mt-1">🛒</span>
+          <span class="text-indigo-400 mt-1">🛒</span>
           <div><strong>Retail:</strong> Requires inventory management</div>
         </li>
         <li class="flex items-start gap-2">
-          <span class="text-indigo-600 dark:text-indigo-400 mt-1">💼</span>
+          <span class="text-indigo-400 mt-1">💼</span>
           <div><strong>Service businesses:</strong> Focus on time tracking and project profitability</div>
         </li>
         <li class="flex items-start gap-2">
-          <span class="text-indigo-600 dark:text-indigo-400 mt-1">🛍️</span>
+          <span class="text-indigo-400 mt-1">🛍️</span>
           <div><strong>E-commerce:</strong> Needs multi-channel sales reconciliation</div>
         </li>
       </ul>
 
-      <div class="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-600 p-6 my-6 rounded-r-lg">
-        <h3 class="text-lg font-semibold text-blue-900 dark:text-blue-100 mb-2">💡 Pro Tip</h3>
-        <p class="text-blue-800 dark:text-blue-200">
+      <div class="bg-blue-900/20 border-l-4 border-blue-600 p-6 my-6 rounded-r-lg">
+        <h3 class="text-lg font-semibold text-blue-100 mb-2">💡 Pro Tip</h3>
+        <p class="text-blue-200">
           Ask potential bookkeepers about their experience with businesses like yours. Industry-specific knowledge can save you time and money.
         </p>
       </div>
 
-      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">3. Services Offered</h2>
+      <h2 class="text-2xl font-bold text-white mb-6">3. Services Offered</h2>
       <p>Make sure the bookkeeper offers the services you need:</p>
 
-      <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Basic Services</h3>
+      <h3 class="text-xl font-semibold text-white mb-3">Basic Services</h3>
       <ul class="space-y-2 my-4">
         <li class="flex items-start gap-2">
           <span class="text-green-500 mt-1">✓</span>
@@ -548,7 +548,7 @@ export const blogPosts: BlogPost[] = [
         </li>
       </ul>
 
-      <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Advanced Services</h3>
+      <h3 class="text-xl font-semibold text-white mb-3">Advanced Services</h3>
       <ul class="space-y-2 my-4">
         <li class="flex items-start gap-2">
           <span class="text-green-500 mt-1">✓</span>
@@ -576,7 +576,7 @@ export const blogPosts: BlogPost[] = [
         </li>
       </ul>
 
-      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">4. Technology and Tools</h2>
+      <h2 class="text-2xl font-bold text-white mb-6">4. Technology and Tools</h2>
       <p>A modern bookkeeper should be comfortable with:</p>
       <ul class="space-y-2 my-4">
         <li class="flex items-start gap-2">
@@ -601,7 +601,7 @@ export const blogPosts: BlogPost[] = [
         </li>
       </ul>
 
-      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">5. Communication Style</h2>
+      <h2 class="text-2xl font-bold text-white mb-6">5. Communication Style</h2>
       <p>Your bookkeeper should:</p>
       <ul class="space-y-2 my-4">
         <li class="flex items-start gap-2">
@@ -626,37 +626,37 @@ export const blogPosts: BlogPost[] = [
         </li>
       </ul>
 
-      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">6. Pricing Structure</h2>
+      <h2 class="text-2xl font-bold text-white mb-6">6. Pricing Structure</h2>
       <p>Bookkeepers typically charge in one of three ways:</p>
 
-      <div class="bg-indigo-50 dark:bg-indigo-900/20 p-6 rounded-lg my-6 space-y-4">
+      <div class="bg-indigo-900/20 p-6 rounded-lg my-6 space-y-4">
         <div>
-          <h3 class="text-lg font-semibold text-indigo-900 dark:text-indigo-100">Hourly Rates ($50-$150/hour)</h3>
-          <p class="text-indigo-800 dark:text-indigo-200 mt-2"><strong>Pros:</strong> Pay only for time used<br>
+          <h3 class="text-lg font-semibold text-indigo-100">Hourly Rates ($50-$150/hour)</h3>
+          <p class="text-indigo-200 mt-2"><strong>Pros:</strong> Pay only for time used<br>
           <strong>Cons:</strong> Unpredictable monthly costs</p>
         </div>
 
         <div>
-          <h3 class="text-lg font-semibold text-indigo-900 dark:text-indigo-100">Monthly Retainer ($300-$2,500/month)</h3>
-          <p class="text-indigo-800 dark:text-indigo-200 mt-2"><strong>Pros:</strong> Predictable costs, often includes unlimited support<br>
+          <h3 class="text-lg font-semibold text-indigo-100">Monthly Retainer ($300-$2,500/month)</h3>
+          <p class="text-indigo-200 mt-2"><strong>Pros:</strong> Predictable costs, often includes unlimited support<br>
           <strong>Cons:</strong> May pay for unused time in slow months</p>
         </div>
 
         <div>
-          <h3 class="text-lg font-semibold text-indigo-900 dark:text-indigo-100">Per-Transaction ($1-$3 per transaction)</h3>
-          <p class="text-indigo-800 dark:text-indigo-200 mt-2"><strong>Pros:</strong> Scales with business size<br>
+          <h3 class="text-lg font-semibold text-indigo-100">Per-Transaction ($1-$3 per transaction)</h3>
+          <p class="text-indigo-200 mt-2"><strong>Pros:</strong> Scales with business size<br>
           <strong>Cons:</strong> Can get expensive for high-volume businesses</p>
         </div>
       </div>
 
-      <div class="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-600 p-6 my-6 rounded-r-lg">
-        <h3 class="text-lg font-semibold text-yellow-900 dark:text-yellow-100 mb-2">⚠️ Red Flag</h3>
-        <p class="text-yellow-800 dark:text-yellow-200">
+      <div class="bg-yellow-900/20 border-l-4 border-yellow-600 p-6 my-6 rounded-r-lg">
+        <h3 class="text-lg font-semibold text-yellow-100 mb-2">⚠️ Red Flag</h3>
+        <p class="text-yellow-200">
           Be wary of bookkeepers who won&apos;t provide clear pricing or seem evasive about costs.
         </p>
       </div>
 
-      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">7. References and Reviews</h2>
+      <h2 class="text-2xl font-bold text-white mb-6">7. References and Reviews</h2>
       <p>Always check:</p>
       <ul class="space-y-2 my-4">
         <li class="flex items-start gap-2">
@@ -677,10 +677,10 @@ export const blogPosts: BlogPost[] = [
         </li>
       </ul>
 
-      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">8. Local vs. Virtual</h2>
+      <h2 class="text-2xl font-bold text-white mb-6">8. Local vs. Virtual</h2>
       <p>With cloud technology, your bookkeeper doesn&apos;t need to be local. At Breeze Bookkeeping, we serve both local Utah clients and businesses nationwide. Here are the benefits of each:</p>
 
-      <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Local Service (Utah - Herriman/Salt Lake City)</h3>
+      <h3 class="text-xl font-semibold text-white mb-3">Local Service (Utah - Herriman/Salt Lake City)</h3>
       <ul class="space-y-2 my-4">
         <li class="flex items-start gap-2">
           <span class="text-green-500 mt-1">✓</span>
@@ -700,7 +700,7 @@ export const blogPosts: BlogPost[] = [
         </li>
       </ul>
 
-      <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Nationwide Virtual Service</h3>
+      <h3 class="text-xl font-semibold text-white mb-3">Nationwide Virtual Service</h3>
       <ul class="space-y-2 my-4">
         <li class="flex items-start gap-2">
           <span class="text-green-500 mt-1">✓</span>
@@ -720,19 +720,19 @@ export const blogPosts: BlogPost[] = [
         </li>
       </ul>
 
-      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Questions to Ask Before Hiring</h2>
+      <h2 class="text-2xl font-bold text-white mb-6">Questions to Ask Before Hiring</h2>
       <ol class="space-y-2 my-4 list-decimal list-inside">
-        <li class="text-gray-700 dark:text-gray-300">What accounting software do you specialize in?</li>
-        <li class="text-gray-700 dark:text-gray-300">Do you have experience with businesses in my industry?</li>
-        <li class="text-gray-700 dark:text-gray-300">What&apos;s your typical response time for questions?</li>
-        <li class="text-gray-700 dark:text-gray-300">How do you handle tax season?</li>
-        <li class="text-gray-700 dark:text-gray-300">What reports will I receive and how often?</li>
-        <li class="text-gray-700 dark:text-gray-300">Do you carry errors and omissions insurance?</li>
-        <li class="text-gray-700 dark:text-gray-300">What happens if you&apos;re sick or on vacation?</li>
-        <li class="text-gray-700 dark:text-gray-300">How do you stay current with tax law changes?</li>
+        <li class="text-gray-300">What accounting software do you specialize in?</li>
+        <li class="text-gray-300">Do you have experience with businesses in my industry?</li>
+        <li class="text-gray-300">What&apos;s your typical response time for questions?</li>
+        <li class="text-gray-300">How do you handle tax season?</li>
+        <li class="text-gray-300">What reports will I receive and how often?</li>
+        <li class="text-gray-300">Do you carry errors and omissions insurance?</li>
+        <li class="text-gray-300">What happens if you&apos;re sick or on vacation?</li>
+        <li class="text-gray-300">How do you stay current with tax law changes?</li>
       </ol>
 
-      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Red Flags to Watch For</h2>
+      <h2 class="text-2xl font-bold text-white mb-6">Red Flags to Watch For</h2>
       <ul class="space-y-2 my-4">
         <li class="flex items-start gap-2">
           <span class="text-red-500 mt-1">🚩</span>
@@ -760,7 +760,7 @@ export const blogPosts: BlogPost[] = [
         </li>
       </ul>
 
-      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Why Choose Breeze Bookkeeping?</h2>
+      <h2 class="text-2xl font-bold text-white mb-6">Why Choose Breeze Bookkeeping?</h2>
       <p>At Breeze Bookkeeping, I bring:</p>
       <ul class="space-y-2 my-4">
         <li class="flex items-start gap-2">
