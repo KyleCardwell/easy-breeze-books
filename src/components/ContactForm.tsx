@@ -20,7 +20,7 @@ export default function ContactForm() {
   }, []);
 
   return (
-    <div className="bg-white p-6 rounded-xl border border-gray-400 dark:border-none">
+    <div className="bg-white p-6 rounded-xl">
       <iframe
         ref={iframeRef}
         src="https://tally.so/embed/mOv0E8?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"

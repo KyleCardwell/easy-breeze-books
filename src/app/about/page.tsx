@@ -37,19 +37,19 @@ export default function About() {
                 clipPath:
                   "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
               }}
-              className="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75 dark:opacity-20"
+              className="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] sm:left-[calc(50%-30rem)] sm:w-288.75 opacity-20"
             />
           </div>
 
           <div className="py-12">
-            <div className="mx-auto max-w-7xl px-6 lg:px-8 mt-16">
-              <article className="prose prose-lg dark:prose-invert max-w-none">
-                <h1 className="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl lg:text-balance dark:text-white mb-8">
+            <div className="mx-auto max-w-7xl px-6 lg:px-8 mt-2 md:mt-8 lg:mt-16">
+              <article className=" prose-lg prose-invert max-w-none">
+                <h1 className="text-4xl font-semibold tracking-tight text-pretty sm:text-5xl lg:text-balance text-white mb-8">
                   About Breeze Bookkeeping
                 </h1>
 
                 <div className="float-left mr-6 mb-6 w-full sm:w-[300px]">
-                  <div className="rounded-xl bg-gray-900/5 p-2 ring-1 ring-gray-900/10 ring-inset lg:rounded-2xl lg:p-4 dark:bg-white/2.5 dark:ring-white/10">
+                  <div className="rounded-xl p-2 ring-1 ring-inset lg:rounded-2xl lg:p-4 bg-white/2.5 ring-white/10">
                     <div className="h-[300px] sm:h-[400px] overflow-hidden relative">
                       <Image
                         alt="Darren Cardwell"
@@ -62,7 +62,7 @@ export default function About() {
                   </div>
                 </div>
 
-                <p className="text-lg/8 text-gray-700 dark:text-gray-300">
+                <p className="text-lg/8 text-gray-300">
                   Hello! I&apos;m Darren Cardwell, the face behind Breeze
                   Bookkeeping. I&apos;m a Quickbooks ProAdvisor based in
                   Herriman, UT, near Salt Lake City. Thanks to cloud technology,
@@ -72,7 +72,7 @@ export default function About() {
                   I handle it all!
                 </p>
 
-                <p className="text-lg/8 text-gray-700 dark:text-gray-300 mt-6">
+                <p className="text-lg/8 text-gray-300 mt-6">
                   I&apos;ve always loved numbers — there&apos;s something so
                   satisfying about seeing everything click into place. For me,
                   accounting feels almost like a science, and I get a lot of joy
@@ -84,7 +84,7 @@ export default function About() {
                   care of the numbers behind the scenes.
                 </p>
 
-                <p className="text-lg/8 text-gray-700 dark:text-gray-300 mt-6">
+                <p className="text-lg/8 text-gray-300 mt-6">
                   I grew up in California, and moved to Utah in 2001 with my
                   wife and 4 sons. I currently live in Herriman, Utah and love
                   spending time with my sons and their growing families.
