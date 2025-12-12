@@ -13,6 +13,8 @@ export const navigation = [
   { name: "Blog", href: "/blog" },
 ];
 
+export const calendlyLink = "https://calendly.com/easybreezebooks/consultation";
+
 export const homePageServices = [
   {
     name: "Monthly Bookkeeping",
