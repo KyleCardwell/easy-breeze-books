@@ -3,6 +3,7 @@
 import { useState } from "react";
 import ContactForm from "@/components/ContactForm";
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
+import { calendlyLink } from "@/utils/constants";
 
 const Contact = () => {
   const [isFormOpen, setIsFormOpen] = useState(false);
@@ -35,7 +36,7 @@ const Contact = () => {
         </p>
         <div className="w-full flex justify-center mt-8">
           <a
-            href="https://calendly.com/breezebookkeeping/30min"
+            href={calendlyLink}
             className="text-lg/8 text-indigo-600 hover:text-indigo-300 font-semibold"
           >
             <div className="mt-8 rounded py-2 px-8 bg-white text-indigo-600 hover:bg-indigo-500">

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Script from "next/script";
-import { homePageServices } from "@/utils/constants";
+import { calendlyLink, homePageServices } from "@/utils/constants";
 import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 
 export default function Homepage() {
@@ -97,7 +97,7 @@ export default function Homepage() {
                       </p>
                       <div className="w-full flex justify-center mt-2 sm:mt-6">
                         <a
-                          href="https://calendly.com/breezebookkeeping/30min"
+                          href={calendlyLink}
                           className="text-xs md:text-xl text-white hover:text-indigo-100 font-semibold"
                         >
                           <div className="rounded bg-indigo-600 py-1 px-2 md:py-2 md:px-4">
@@ -178,7 +178,7 @@ export default function Homepage() {
             </p>
             <div className="w-full flex justify-center mt-6">
               <a
-                href="https://calendly.com/breezebookkeeping/30min"
+                href={calendlyLink}
                 className="text-lg/8 text-indigo-600 hover:text-indigo-500 font-semibold"
               >
                 <div className="rounded bg-white py-2 px-4">Schedule Now</div>
