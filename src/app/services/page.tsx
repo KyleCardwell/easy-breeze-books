@@ -5,24 +5,36 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Bookkeeping Services",
-  description: "Professional bookkeeping services including QuickBooks consulting, payroll, account reconciliation, financial statements, and more. Serving Herriman, UT, Salt Lake City, and businesses nationwide.",
-  keywords: ["bookkeeping services", "QuickBooks consulting", "payroll services", "account reconciliation", "financial statements", "invoicing", "bill pay", "Herriman UT", "Salt Lake City"],
+  description:
+    "Professional bookkeeping services including QuickBooks consulting, payroll, account reconciliation, financial statements, and more. Serving Herriman, UT, Salt Lake City, and businesses nationwide.",
+  keywords: [
+    "bookkeeping services",
+    "QuickBooks consulting",
+    "payroll services",
+    "account reconciliation",
+    "financial statements",
+    "invoicing",
+    "bill pay",
+    "Herriman UT",
+    "Salt Lake City",
+  ],
   alternates: {
-    canonical: "https://www.easybreezebooks.com/services"
+    canonical: "https://www.easybreezebooks.com/services",
   },
   openGraph: {
     title: "Bookkeeping Services | Breeze Bookkeeping",
-    description: "Professional bookkeeping services including QuickBooks consulting, payroll, account reconciliation, and financial statements.",
+    description:
+      "Professional bookkeeping services including QuickBooks consulting, payroll, account reconciliation, and financial statements.",
     url: "https://www.easybreezebooks.com/services",
     images: [
       {
         url: "/quickbooks_at_office.avif",
         width: 1200,
         height: 630,
-        alt: "QuickBooks Bookkeeping Services"
-      }
-    ]
-  }
+        alt: "QuickBooks Bookkeeping Services",
+      },
+    ],
+  },
 };
 
 export default function Services() {
@@ -78,17 +90,17 @@ export default function Services() {
               books drive actionable financial insights and serve as the
               backbone for tax filings. When errors occur, the cost can be high
               — from poor decisions made on bad data to overpaying in taxes.
-              That’s why having a certified Quickbooks ProAdvisor manage your
-              bookkeeping and taxes is such a valuable safeguard.
+              That’s why having a Certified QuickBooks ProAdvisor manage your
+              bookkeeping and accounting is such a valuable safeguard.
             </p>
             <p className="mt-6 text-lg/8 text-gray-300">
-              QuickBooks Online is our platform of choice because it’s the
-              industry leader and can meet the full accounting needs of nearly
-              all small businesses. Its ability to integrate with tools like
-              time tracking, expense reporting, and online bill pay creates a
-              more efficient system, boosting accuracy while saving time and
-              money. As Advanced Certified QuickBooks ProAdvisors, we’re
-              equipped to provide the right solution for your unique needs.
+              Our software platform of choice is the industry leader because it
+              can meet the full accounting needs of nearly all small businesses.
+              Its ability to integrate with tools like time tracking, expense
+              reporting, and online bill pay creates a more efficient system,
+              boosting accuracy while saving time and money. As experts in our
+              field, we’re equipped to provide the right solution for your
+              unique needs.
             </p>
           </div>
         </div>

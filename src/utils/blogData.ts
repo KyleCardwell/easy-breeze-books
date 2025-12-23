@@ -169,7 +169,7 @@ export const blogPosts: BlogPost[] = [
       </div>
 
       <h2 class="text-2xl font-bold text-white mb-6">What You Get with Breeze Bookkeeping</h2>
-      <p>At Breeze Bookkeeping, we serve clients in Utah and nationwide with transparent, affordable pricing tailored to your specific needs. As a QuickBooks ProAdvisor, I ensure your books are accurate, up-to-date, and optimized for tax savings.</p>
+      <p>At Breeze Bookkeeping, we serve clients in Utah and nationwide with transparent, affordable pricing tailored to your specific needs. As a Certified QuickBooks ProAdvisor, I ensure your books are accurate, up-to-date, and optimized for tax savings.</p>
       <br />
       <p>Our services include:</p>
 
@@ -249,23 +249,23 @@ export const blogPosts: BlogPost[] = [
     `,
   },
   {
-    slug: "quickbooks-mistakes",
-    title: "5 Common QuickBooks Mistakes Small Businesses Make",
+    slug: "bookkeeping-mistakes",
+    title: "5 Common Bookkeeping Mistakes Small Businesses Make",
     excerpt:
-      "Avoid these costly QuickBooks errors that could be hurting your business finances and learn how to fix them.",
+      "Avoid these costly bookkeeping errors that could be hurting your business finances and learn how to fix them.",
     date: "2025-09-16",
-    category: "QuickBooks Tips",
+    category: "Bokkeeping Tips",
     author: "Darren Cardwell",
     keywords: [
-      "QuickBooks mistakes",
-      "QuickBooks errors",
-      "QuickBooks tips",
-      "QuickBooks best practices",
-      "avoid QuickBooks problems",
+      "bookkeeping mistakes",
+      "bookkeeping errors",
+      "bookkeeping tips",
+      "bookkeeping best practices",
+      "avoid bookkeeping problems",
     ],
     content: `
       <p class="text-xl text-gray-300 leading-relaxed mb-6">
-        As a QuickBooks ProAdvisor serving Utah and nationwide, I&apos;ve seen countless businesses make the same mistakes in QuickBooks. These errors can lead to inaccurate financial reports, tax problems, and poor business decisions. Here are the top 5 mistakes and how to avoid them.
+        As a Certified QuickBooks ProAdvisor serving Utah and nationwide, I&apos;ve seen countless businesses make the same mistakes. These errors can lead to inaccurate financial reports, tax problems, and poor business decisions. Here are the top 5 mistakes and how to avoid them.
       </p>
 
       <h2 class="text-2xl font-bold text-white mb-6">1. Not Reconciling Bank Accounts Regularly</h2>
@@ -332,7 +332,7 @@ export const blogPosts: BlogPost[] = [
       <div class="bg-green-900/20 border-l-4 border-green-600 p-6 my-6 rounded-r-lg">
         <h3 class="text-lg font-semibold text-green-100 mb-2">✅ The Fix</h3>
         <p class="text-green-200">
-          Review your chart of accounts with a QuickBooks ProAdvisor. Make sure each account is the correct type and properly categorized.
+          Review your chart of accounts with a Certified QuickBooks ProAdvisor. Make sure each account is the correct type and properly categorized.
         </p>
       </div>
 
@@ -341,7 +341,7 @@ export const blogPosts: BlogPost[] = [
       <div class="bg-red-900/20 border-l-4 border-red-600 p-6 my-6 rounded-r-lg">
         <h3 class="text-lg font-semibold text-red-100 mb-2">❌ The Mistake</h3>
         <p class="text-red-200">
-          Recording personal expenses in your business QuickBooks file or using your business account for personal purchases.
+          Recording personal expenses in your business bookkeeping file or using your business account for personal purchases.
         </p>
       </div>
       
@@ -377,7 +377,7 @@ export const blogPosts: BlogPost[] = [
       <div class="bg-red-900/20 border-l-4 border-red-600 p-6 my-6 rounded-r-lg">
         <h3 class="text-lg font-semibold text-red-100 mb-2">❌ The Mistake</h3>
         <p class="text-red-200">
-          Assuming QuickBooks Online automatically protects all your data or not backing up QuickBooks Desktop.
+          Assuming your accounting software automatically protects all your data or not backing up your accounting software.
         </p>
       </div>
       
@@ -400,7 +400,7 @@ export const blogPosts: BlogPost[] = [
       <div class="bg-green-900/20 border-l-4 border-green-600 p-6 my-6 rounded-r-lg">
         <h3 class="text-lg font-semibold text-green-100 mb-2">✅ The Fix</h3>
         <p class="text-green-200">
-          For QuickBooks Desktop, create monthly backups stored in multiple locations. For QuickBooks Online, export reports regularly and consider using a third-party backup service.
+          For desktop software, create monthly backups stored in multiple locations. For online applications, export reports regularly and consider using a third-party backup service.
         </p>
       </div>
 
@@ -439,7 +439,7 @@ export const blogPosts: BlogPost[] = [
       <div class="bg-blue-900/20 border-l-4 border-blue-600 p-6 my-6 rounded-r-lg">
         <h3 class="text-lg font-semibold text-blue-100 mb-2">💡 Bonus Tip: Not Using Classes or Locations</h3>
         <p class="text-blue-200">
-          If you have multiple profit centers, departments, or locations, use QuickBooks&apos; class or location tracking features. This allows you to see profitability by segment and make better business decisions.
+          If you have multiple profit centers, departments, or locations, use accounting software class or location tracking features. This allows you to see profitability by segment and make better business decisions.
         </p>
       </div>
     `,
@@ -466,10 +466,10 @@ export const blogPosts: BlogPost[] = [
 
       <p>Here&apos;s what to look for when hiring a bookkeeper, whether you&apos;re in Utah or anywhere nationwide.</p>
 
-      <h2 class="text-2xl font-bold text-white mb-6">1. Certifications and Qualifications</h2>
+      <h2 class="text-2xl font-bold text-white mb-6 mt-4">1. Certifications and Qualifications</h2>
       
-      <h3 class="text-xl font-semibold text-white mb-3">QuickBooks ProAdvisor Certification</h3>
-      <p>If you use QuickBooks (and most small businesses do), look for a <strong>QuickBooks ProAdvisor</strong>. This certification means the bookkeeper has:</p>
+      <h3 class="text-xl font-semibold text-white mb-3">Certified QuickBooks ProAdvisor</h3>
+      <p>If you use QuickBooks software (and most small businesses do), look for a <strong>Certified QuickBooks ProAdvisor</strong>. This certification means the bookkeeper has:</p>
       <ul class="space-y-2 my-4">
         <li class="flex items-start gap-2">
           <span class="text-green-500 mt-1">✓</span>
@@ -581,7 +581,7 @@ export const blogPosts: BlogPost[] = [
       <ul class="space-y-2 my-4">
         <li class="flex items-start gap-2">
           <span class="text-green-500 mt-1">✓</span>
-          <div><strong>Cloud-based accounting:</strong> QuickBooks Online, Xero, etc.</div>
+          <div><strong>Cloud-based accounting:</strong> QuickBooks, Xero, etc.</div>
         </li>
         <li class="flex items-start gap-2">
           <span class="text-green-500 mt-1">✓</span>
@@ -765,7 +765,7 @@ export const blogPosts: BlogPost[] = [
       <ul class="space-y-2 my-4">
         <li class="flex items-start gap-2">
           <span class="text-green-500 mt-1">✓</span>
-          <div><strong>Advanced QuickBooks ProAdvisor certification</strong></div>
+          <div><strong>Certified QuickBooks ProAdvisor</strong></div>
         </li>
         <li class="flex items-start gap-2">
           <span class="text-green-500 mt-1">✓</span>
