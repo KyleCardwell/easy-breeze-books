@@ -4,21 +4,21 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About Darren Cardwell",
   description:
-    "Meet Darren Cardwell, QuickBooks ProAdvisor and founder of Breeze Bookkeeping in Herriman, UT. Providing professional bookkeeping services to businesses across the United States.",
+    "Meet Darren Cardwell, Certified QuickBooks ProAdvisor and founder of Breeze Bookkeeping in Herriman, UT. Providing professional bookkeeping services to businesses across the United States.",
   alternates: {
     canonical: "https://www.easybreezebooks.com/about",
   },
   openGraph: {
     title: "About Darren Cardwell | Breeze Bookkeeping",
     description:
-      "Meet Darren Cardwell, QuickBooks ProAdvisor and founder of Breeze Bookkeeping in Herriman, UT.",
+      "Meet Darren Cardwell, Certified QuickBooks ProAdvisor and founder of Breeze Bookkeeping in Herriman, UT.",
     url: "https://www.easybreezebooks.com/about",
     images: [
       {
         url: "/DC photo.avif",
         width: 800,
         height: 600,
-        alt: "Darren Cardwell, QuickBooks ProAdvisor",
+        alt: "Darren Cardwell, Certified QuickBooks ProAdvisor",
       },
     ],
   },
@@ -65,9 +65,8 @@ export default function About() {
                 </div>
 
                 <p className="text-lg/8 text-gray-300">
-                  Hello! I&apos;m Darren Cardwell, the face behind Breeze
-                  Bookkeeping. I&apos;m a Member of the QuickBooks ProAdvisor
-                  Program and I&apos;m based in Herriman, UT, near Salt Lake City. Thanks to
+                  Hello! I&apos;m Darren Cardwell, Certified QuickBooks ProAdvisor, the face behind Breeze
+                  Bookkeeping. I&apos;m based in Herriman, UT, near Salt Lake City. Thanks to
                   cloud technology, however, I work with business owners all
                   over the country. From account reconciliation and categorizing
                   transactions to payroll, invoicing, and payables, to

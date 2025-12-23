@@ -17,10 +17,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.easybreezebooks.com'),
   title: {
-    default: "Breeze Bookkeeping | QuickBooks ProAdvisor Program Member in Herriman, UT",
+    default: "Breeze Bookkeeping | Certified QuickBooks ProAdvisor in Herriman, UT",
     template: "%s | Breeze Bookkeeping"
   },
-  description: "Professional bookkeeping services in Herriman, UT and Salt Lake City area. QuickBooks ProAdvisor Program Member offering affordable bookkeeping, payroll, and financial statement analysis for small businesses nationwide.",
+  description: "Professional bookkeeping services in Herriman, UT and Salt Lake City area. Certified QuickBooks ProAdvisor offering affordable bookkeeping, payroll, and financial statement analysis for small businesses nationwide.",
   keywords: [
     "bookkeeping services Herriman UT",
     "QuickBooks ProAdvisor Salt Lake City",
@@ -33,6 +33,7 @@ export const metadata: Metadata = {
     "account reconciliation services",
     "virtual bookkeeper Utah",
     "QuickBooks ProAdvisor Program Member",
+    "Certified QuickBooks ProAdvisor",
     "bookkeeping for small business",
     "Utah bookkeeping services",
     "Salt Lake County bookkeeper"
@@ -48,8 +49,8 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://www.easybreezebooks.com",
     siteName: "Breeze Bookkeeping",
-    title: "Breeze Bookkeeping | QuickBooks ProAdvisor Program Member in Herriman, UT",
-    description: "Professional bookkeeping services in Herriman, UT and Salt Lake City area. QuickBooks ProAdvisor Program Member offering affordable bookkeeping, payroll, and financial statement analysis.",
+    title: "Breeze Bookkeeping | Certified QuickBooks ProAdvisor in Herriman, UT",
+    description: "Professional bookkeeping services in Herriman, UT and Salt Lake City area. Certified QuickBooks ProAdvisor offering affordable bookkeeping, payroll, and financial statement analysis.",
     images: [
       {
         url: "/breeze_bookkeeping_logo.svg",
@@ -61,8 +62,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Breeze Bookkeeping | QuickBooks ProAdvisor Program Member in Herriman, UT",
-    description: "Professional bookkeeping services in Herriman, UT and Salt Lake City area. QuickBooks ProAdvisor Program Member.",
+    title: "Breeze Bookkeeping | Certified QuickBooks ProAdvisor in Herriman, UT",
+    description: "Professional bookkeeping services in Herriman, UT and Salt Lake City area. Certified QuickBooks ProAdvisor offering affordable bookkeeping, payroll, and financial statement analysis.",
     images: ["/breeze_bookkeeping_logo.svg"]
   },
   robots: {
@@ -95,7 +96,7 @@ export default function RootLayout({
     "alternateName": "Breeze Bookkeeping Services",
     "image": "https://www.easybreezebooks.com/breeze_bookkeeping_logo.svg",
     "logo": "https://www.easybreezebooks.com/breeze_bookkeeping_logo.svg",
-    "description": "Professional bookkeeping services in Herriman, UT and Salt Lake City area. QuickBooks ProAdvisor Program Member offering affordable bookkeeping, payroll, and financial statement analysis.",
+    "description": "Professional bookkeeping services in Herriman, UT and Salt Lake City area. Certified QuickBooks ProAdvisor offering affordable bookkeeping, payroll, and financial statement analysis.",
     "url": "https://www.easybreezebooks.com",
     "telephone": "",
     "priceRange": "$$",

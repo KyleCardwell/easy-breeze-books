@@ -143,7 +143,7 @@ export default function Homepage() {
               Although I’m based in Herriman, UT—just outside Salt Lake City—I
               work with businesses all over the country thanks to secure,
               cloud-based technology. As a{" "}
-              <strong>QuickBooks ProAdvisor Program Member</strong>, I help
+              <strong>Certified QuickBooks ProAdvisor</strong>, I help
               connect your bookkeeping with the best financial apps available,
               streamlining your systems so everything works smoothly together.
             </p>

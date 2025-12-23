@@ -90,8 +90,8 @@ export default function Services() {
               books drive actionable financial insights and serve as the
               backbone for tax filings. When errors occur, the cost can be high
               — from poor decisions made on bad data to overpaying in taxes.
-              That’s why having us manage your bookkeeping and taxes is such a
-              valuable safeguard.
+              That’s why having a Certified QuickBooks ProAdvisor manage your
+              bookkeeping and accounting is such a valuable safeguard.
             </p>
             <p className="mt-6 text-lg/8 text-gray-300">
               Our software platform of choice is the industry leader because it
