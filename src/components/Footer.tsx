@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const Footer = () => {
   const pathname = usePathname();
-  
+
   return (
     <footer className="relative mx-auto pt-16 max-w-7xl px-6 lg:px-8">
       <div className="border-t py-8 sm:py-14 lg:py-20 border-white/10">
@@ -30,9 +30,7 @@ const Footer = () => {
 
               {/* Navigation */}
               <div className="mt-10 md:mt-0">
-                <h3 className="text-sm/6 font-semibold text-white">
-                  Navigate
-                </h3>
+                <h3 className="text-sm/6 font-semibold text-white">Navigate</h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.map((item) => {
                     const isActive = pathname === item.href;
@@ -57,6 +55,11 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        <p className="text-sm/6 mt-10 text-center">
+          Intuit, QuickBooks, and QuickBooks ProAdvisor are registered
+          trademarks of Intuit Inc. used with permission under the QuickBooks
+          ProAdvisor Agreement.
+        </p>
       </div>
     </footer>
   );
