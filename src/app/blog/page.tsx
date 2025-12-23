@@ -4,7 +4,7 @@ import { blogPosts } from "@/utils/blogData";
 
 export const metadata: Metadata = {
   title: "Bookkeeping Tips & Resources",
-  description: "Expert bookkeeping advice, QuickBooks tips, and financial insights for small business owners in Utah and nationwide.",
+  description: "Expert bookkeeping advice, bookkeeping tips, and financial insights for small business owners in Utah and nationwide.",
   keywords: [
     "bookkeeping tips",
     "QuickBooks tutorials",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Bookkeeping Tips & Resources | Breeze Bookkeeping",
-    description: "Expert bookkeeping advice and QuickBooks tips for small business owners.",
+    description: "Expert bookkeeping advice and bookkeeping tips for small business owners.",
     url: "https://www.easybreezebooks.com/blog"
   }
 };
@@ -44,7 +44,7 @@ export default function Blog() {
           Bookkeeping Tips & Resources
         </h1>
         <p className="mt-6 text-lg leading-8 text-gray-300">
-          Expert advice, QuickBooks tips, and financial insights to help your business thrive.
+          Expert advice, bookkeeping tips, and financial insights to help your business thrive.
         </p>
 
         <div className="mt-16 space-y-16 border-t border-gray-700 pt-10">
