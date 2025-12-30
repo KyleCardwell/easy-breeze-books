@@ -2,8 +2,8 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contact Us",
-  description: "Schedule a free phone consultation with Breeze Bookkeeping. QuickBooks ProAdvisor serving Herriman, UT, Salt Lake City, and businesses nationwide. Let's discuss your bookkeeping needs.",
-  keywords: ["bookkeeping", "contact bookkeeper", "schedule consultation", "QuickBooks ProAdvisor", "Herriman UT bookkeeper", "Salt Lake City bookkeeping", "Utah bookkeeper"],
+  description: "Schedule a free phone consultation with Breeze Bookkeeping. Professional bookkeeper serving Herriman, UT, Salt Lake City, and businesses nationwide. Let's discuss your bookkeeping needs.",
+  keywords: ["bookkeeping", "contact bookkeeper", "schedule consultation", "professional bookkeeper", "Herriman UT bookkeeper", "Salt Lake City bookkeeping", "Utah bookkeeper"],
   alternates: {
     canonical: "https://www.easybreezebooks.com/contact"
   },

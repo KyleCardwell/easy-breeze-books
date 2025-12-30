@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Expert bookkeeping advice, bookkeeping tips, and financial insights for small business owners in Utah and nationwide.",
   keywords: [
     "bookkeeping tips",
-    "QuickBooks tutorials",
+    "accounting software tutorials",
     "small business finance",
     "accounting advice Utah",
     "bookkeeping best practices"

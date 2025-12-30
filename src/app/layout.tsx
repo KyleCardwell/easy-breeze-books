@@ -93,7 +93,7 @@ export default function RootLayout({
     "alternateName": "Breeze Bookkeeping Services",
     "image": "https://www.easybreezebooks.com/breeze_bookkeeping_logo.svg",
     "logo": "https://www.easybreezebooks.com/breeze_bookkeeping_logo.svg",
-    "description": "Professional bookkeeping services in Herriman, UT and Salt Lake City area. Certified Offering affordable bookkeeping, payroll, and financial statement analysis.",
+    "description": "Professional bookkeeping services in Herriman, UT and Salt Lake City area. Offering affordable bookkeeping, payroll, and financial statement analysis.",
     "url": "https://www.easybreezebooks.com",
     "telephone": "",
     "priceRange": "$$",
@@ -175,8 +175,8 @@ export default function RootLayout({
     "founder": {
       "@type": "Person",
       "name": "Darren Cardwell",
-      "jobTitle": "Member of the QuickBooks ProAdvisor Program",
-      "description": "Member of the QuickBooks ProAdvisor Program"
+      "jobTitle": "Professional Bookkeeper",
+      "description": "Professional Bookkeeper and Accounting Expert"
     },
     "knowsAbout": [
       "Bookkeeping",
