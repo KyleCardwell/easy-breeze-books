@@ -24,7 +24,7 @@ const Footer = () => {
                 className="max-h-48 w-full object-contain"
               />
               <Image
-                alt="CertifiedQuickBooks ProAdvisor Payroll Certification Badge"
+                alt="Certified QuickBooks ProAdvisor Payroll Certification Badge"
                 src="/Certified-Payroll-Badge.png"
                 width={70}
                 height={70}
