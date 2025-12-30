@@ -18,7 +18,7 @@ export const metadata: Metadata = {
         url: "/DC photo.avif",
         width: 800,
         height: 600,
-        alt: "Darren Cardwell, Professional Bookkeeper",
+        alt: "Darren Cardwell, professional bookkeeper and founder of Breeze Bookkeeping in Herriman, UT.",
       },
     ],
   },
@@ -65,7 +65,7 @@ export default function About() {
                 </div>
 
                 <p className="text-lg/8 text-gray-300">
-                  Hello! I&apos;m Darren Cardwell, professional bookkeeper, the face behind Breeze
+                  Hello! I&apos;m Darren Cardwell, the face behind Breeze
                   Bookkeeping. I&apos;m based in Herriman, UT, near Salt Lake City. Thanks to
                   cloud technology, however, I work with business owners all
                   over the country. From account reconciliation and categorizing
