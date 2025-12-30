@@ -6,10 +6,10 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Bookkeeping Services",
   description:
-    "Professional bookkeeping services including QuickBooks consulting, payroll, account reconciliation, financial statements, and more. Serving Herriman, UT, Salt Lake City, and businesses nationwide.",
+    "Professional bookkeeping services including consulting for QuickBooks, payroll, account reconciliation, financial statements, and more. Serving Herriman, UT, Salt Lake City, and businesses nationwide.",
   keywords: [
     "bookkeeping services",
-    "QuickBooks consulting",
+    "consulting for QuickBooks",
     "payroll services",
     "account reconciliation",
     "financial statements",
@@ -24,14 +24,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Bookkeeping Services | Breeze Bookkeeping",
     description:
-      "Professional bookkeeping services including QuickBooks consulting, payroll, account reconciliation, and financial statements.",
+      "Professional bookkeeping services including consulting for QuickBooks, payroll, account reconciliation, and financial statements.",
     url: "https://www.easybreezebooks.com/services",
     images: [
       {
         url: "/quickbooks_at_office.avif",
         width: 1200,
         height: 630,
-        alt: "QuickBooks Bookkeeping Services",
+        alt: "Bookkeeping Services for QuickBooks",
       },
     ],
   },
@@ -90,7 +90,7 @@ export default function Services() {
               books drive actionable financial insights and serve as the
               backbone for tax filings. When errors occur, the cost can be high
               — from poor decisions made on bad data to overpaying in taxes.
-              That’s why having a Certified QuickBooks ProAdvisor manage your
+              That&apos;s why having a Member of the QuickBooks ProAdvisor Program manage your
               bookkeeping and accounting is such a valuable safeguard.
             </p>
             <p className="mt-6 text-lg/8 text-gray-300">

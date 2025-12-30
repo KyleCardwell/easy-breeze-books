@@ -15,15 +15,15 @@ export default function Homepage() {
         name: "What bookkeeping services does Breeze Bookkeeping offer?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Breeze Bookkeeping offers comprehensive bookkeeping services including account reconciliation, transaction categorization, payroll services, invoicing, accounts payable, financial statement analysis, and QuickBooks Online consulting. We serve businesses in Herriman, UT, Salt Lake County, and nationwide.",
+          text: "Breeze Bookkeeping offers comprehensive bookkeeping services including account reconciliation, transaction categorization, payroll services, invoicing, accounts payable, financial statement analysis, and consulting for QuickBooks Online. We serve businesses in Herriman, UT, Salt Lake County, and nationwide.",
         },
       },
       {
         "@type": "Question",
-        name: "Are you a certified QuickBooks ProAdvisor?",
+        name: "Are you a member of the QuickBooks ProAdvisor Program?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes, Darren Cardwell is a Member of the QuickBooks ProAdvisor Program. This certification ensures expert knowledge of QuickBooks Online and the ability to provide the best solutions for your business needs.",
+          text: "Yes, Darren Cardwell is a Member of the QuickBooks ProAdvisor Program. This membership ensures expert knowledge of QuickBooks Online and the ability to provide the best solutions for your business needs.",
         },
       },
       {
@@ -47,7 +47,7 @@ export default function Homepage() {
         name: "What makes Breeze Bookkeeping different from other bookkeepers?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Breeze Bookkeeping focuses on making bookkeeping fast, accurate, and affordable. As a QuickBooks ProAdvisor, we integrate the best financial apps to streamline your systems. We provide financial clarity and confidence so you can make smart business decisions without stress, backed by proven systems that save time and cut costs.",
+          text: "Breeze Bookkeeping focuses on making bookkeeping fast, accurate, and affordable. As a Member of the QuickBooks ProAdvisor Program, we integrate the best financial apps to streamline your systems. We provide financial clarity and confidence so you can make smart business decisions without stress, backed by proven systems that save time and cut costs.",
         },
       },
     ],
@@ -108,7 +108,7 @@ export default function Homepage() {
                     </div>
                   </div>
                   <Image
-                    alt="Darren Cardwell, QuickBooks ProAdvisor and founder of Breeze Bookkeeping"
+                    alt="Darren Cardwell, Member of the QuickBooks ProAdvisor Program and founder of Breeze Bookkeeping"
                     src="/darren_1.jpg"
                     width={2432}
                     height={1442}
@@ -143,7 +143,7 @@ export default function Homepage() {
               Although I’m based in Herriman, UT—just outside Salt Lake City—I
               work with businesses all over the country thanks to secure,
               cloud-based technology. As a{" "}
-              <strong>Certified QuickBooks ProAdvisor</strong>, I help
+              <strong>Member of the QuickBooks ProAdvisor Program</strong>, I help
               connect your bookkeeping with the best financial apps available,
               streamlining your systems so everything works smoothly together.
             </p>
