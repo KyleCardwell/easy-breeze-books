@@ -169,7 +169,7 @@ export const blogPosts: BlogPost[] = [
       </div>
 
       <h2 class="text-2xl font-bold text-white mb-6">What You Get with Breeze Bookkeeping</h2>
-      <p>At Breeze Bookkeeping, we serve clients in Utah and nationwide with transparent, affordable pricing tailored to your specific needs. As a Certified QuickBooks ProAdvisor, I ensure your books are accurate, up-to-date, and optimized for tax savings.</p>
+      <p>At Breeze Bookkeeping, we serve clients in Utah and nationwide with transparent, affordable pricing tailored to your specific needs. As a professional bookkeeper, I ensure your books are accurate, up-to-date, and optimized for tax savings.</p>
       <br />
       <p>Our services include:</p>
 
@@ -184,7 +184,7 @@ export const blogPosts: BlogPost[] = [
   </li>
   <li class="flex items-start gap-2">
     <span class="text-green-500 mt-1">✓</span>
-    <div>QuickBooks setup and optimization</div>
+    <div>Accounting software setup and optimization</div>
   </li>
   <li class="flex items-start gap-2">
     <span class="text-green-500 mt-1">✓</span>
@@ -265,7 +265,7 @@ export const blogPosts: BlogPost[] = [
     ],
     content: `
       <p class="text-xl text-gray-300 leading-relaxed mb-6">
-        As a Certified QuickBooks ProAdvisor serving Utah and nationwide, I&apos;ve seen countless businesses make the same mistakes. These errors can lead to inaccurate financial reports, tax problems, and poor business decisions. Here are the top 5 mistakes and how to avoid them.
+        As a professional bookkeeper serving Utah and nationwide, I&apos;ve seen countless businesses make the same mistakes. These errors can lead to inaccurate financial reports, tax problems, and poor business decisions. Here are the top 5 mistakes and how to avoid them.
       </p>
 
       <h2 class="text-2xl font-bold text-white mb-6">1. Not Reconciling Bank Accounts Regularly</h2>
@@ -332,7 +332,7 @@ export const blogPosts: BlogPost[] = [
       <div class="bg-green-900/20 border-l-4 border-green-600 p-6 my-6 rounded-r-lg">
         <h3 class="text-lg font-semibold text-green-100 mb-2">✅ The Fix</h3>
         <p class="text-green-200">
-          Review your chart of accounts with a Certified QuickBooks ProAdvisor. Make sure each account is the correct type and properly categorized.
+          Review your chart of accounts with a professional bookkeeper. Make sure each account is the correct type and properly categorized.
         </p>
       </div>
 
@@ -468,24 +468,24 @@ export const blogPosts: BlogPost[] = [
 
       <h2 class="text-2xl font-bold text-white mb-6 mt-4">1. Certifications and Qualifications</h2>
       
-      <h3 class="text-xl font-semibold text-white mb-3">Certified QuickBooks ProAdvisor</h3>
-      <p>If you use QuickBooks software (and most small businesses do), look for a <strong>Certified QuickBooks ProAdvisor</strong>. This certification means the bookkeeper has:</p>
+      <h3 class="text-xl font-semibold text-white mb-3">Professional Certifications</h3>
+      <p>Look for a bookkeeper with professional certifications and ongoing education. A qualified bookkeeper should have:</p>
       <ul class="space-y-2 my-4">
         <li class="flex items-start gap-2">
           <span class="text-green-500 mt-1">✓</span>
-          <div>Passed rigorous QuickBooks exams</div>
+          <div>Expertise in modern accounting software</div>
         </li>
         <li class="flex items-start gap-2">
           <span class="text-green-500 mt-1">✓</span>
-          <div>Stays current with annual recertification</div>
+          <div>Stays current with industry best practices</div>
         </li>
         <li class="flex items-start gap-2">
           <span class="text-green-500 mt-1">✓</span>
-          <div>Has access to advanced QuickBooks support</div>
+          <div>Access to professional support and resources</div>
         </li>
         <li class="flex items-start gap-2">
           <span class="text-green-500 mt-1">✓</span>
-          <div>Understands best practices and advanced features</div>
+          <div>Understanding of advanced accounting features and methods</div>
         </li>
       </ul>
 
@@ -568,7 +568,7 @@ export const blogPosts: BlogPost[] = [
         </li>
         <li class="flex items-start gap-2">
           <span class="text-green-500 mt-1">✓</span>
-          <div>QuickBooks setup and training</div>
+          <div>Accounting software setup and training</div>
         </li>
         <li class="flex items-start gap-2">
           <span class="text-green-500 mt-1">✓</span>
@@ -581,7 +581,7 @@ export const blogPosts: BlogPost[] = [
       <ul class="space-y-2 my-4">
         <li class="flex items-start gap-2">
           <span class="text-green-500 mt-1">✓</span>
-          <div><strong>Cloud-based accounting:</strong> QuickBooks, Xero, etc.</div>
+          <div><strong>Cloud-based accounting software:</strong> Industry-leading platforms</div>
         </li>
         <li class="flex items-start gap-2">
           <span class="text-green-500 mt-1">✓</span>
@@ -765,7 +765,7 @@ export const blogPosts: BlogPost[] = [
       <ul class="space-y-2 my-4">
         <li class="flex items-start gap-2">
           <span class="text-green-500 mt-1">✓</span>
-          <div><strong>Certified QuickBooks ProAdvisor</strong></div>
+          <div><strong>Professional bookkeeper with accounting software expertise</strong></div>
         </li>
         <li class="flex items-start gap-2">
           <span class="text-green-500 mt-1">✓</span>

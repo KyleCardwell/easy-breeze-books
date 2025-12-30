@@ -17,23 +17,20 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.easybreezebooks.com'),
   title: {
-    default: "Breeze Bookkeeping | Certified QuickBooks ProAdvisor in Herriman, UT",
+    default: "Breeze Bookkeeping | Professional Bookkeeper in Herriman, UT",
     template: "%s | Breeze Bookkeeping"
   },
-  description: "Professional bookkeeping services in Herriman, UT and Salt Lake City area. Certified QuickBooks ProAdvisor offering affordable bookkeeping, payroll, and financial statement analysis for small businesses nationwide.",
+  description: "Professional bookkeeping services in Herriman, UT and Salt Lake City area. Offering affordable bookkeeping, payroll, and financial statement analysis for small businesses nationwide.",
   keywords: [
     "bookkeeping services Herriman UT",
-    "QuickBooks ProAdvisor Salt Lake City",
+    "Bookkeeper Salt Lake City",
     "bookkeeper near me",
     "small business bookkeeping Utah",
     "affordable bookkeeping services",
-    "QuickBooks Online consultant",
     "payroll services Herriman",
     "financial statement analysis",
     "account reconciliation services",
     "virtual bookkeeper Utah",
-    "QuickBooks ProAdvisor Program Member",
-    "Certified QuickBooks ProAdvisor",
     "bookkeeping for small business",
     "Utah bookkeeping services",
     "Salt Lake County bookkeeper"
@@ -49,8 +46,8 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://www.easybreezebooks.com",
     siteName: "Breeze Bookkeeping",
-    title: "Breeze Bookkeeping | Certified QuickBooks ProAdvisor in Herriman, UT",
-    description: "Professional bookkeeping services in Herriman, UT and Salt Lake City area. Certified QuickBooks ProAdvisor offering affordable bookkeeping, payroll, and financial statement analysis.",
+    title: "Breeze Bookkeeping | Professional Bookkeeper in Herriman, UT",
+    description: "Professional bookkeeping services in Herriman, UT and Salt Lake City area. Offering affordable bookkeeping, payroll, and financial statement analysis.",
     images: [
       {
         url: "/breeze_bookkeeping_logo.svg",
@@ -62,8 +59,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Breeze Bookkeeping | Certified QuickBooks ProAdvisor in Herriman, UT",
-    description: "Professional bookkeeping services in Herriman, UT and Salt Lake City area. Certified QuickBooks ProAdvisor offering affordable bookkeeping, payroll, and financial statement analysis.",
+    title: "Breeze Bookkeeping | Professional Bookkeeper in Herriman, UT",
+    description: "Professional bookkeeping services in Herriman, UT and Salt Lake City area. Offering affordable bookkeeping, payroll, and financial statement analysis.",
     images: ["/breeze_bookkeeping_logo.svg"]
   },
   robots: {
@@ -96,7 +93,7 @@ export default function RootLayout({
     "alternateName": "Breeze Bookkeeping Services",
     "image": "https://www.easybreezebooks.com/breeze_bookkeeping_logo.svg",
     "logo": "https://www.easybreezebooks.com/breeze_bookkeeping_logo.svg",
-    "description": "Professional bookkeeping services in Herriman, UT and Salt Lake City area. Certified QuickBooks ProAdvisor offering affordable bookkeeping, payroll, and financial statement analysis.",
+    "description": "Professional bookkeeping services in Herriman, UT and Salt Lake City area. Offering affordable bookkeeping, payroll, and financial statement analysis.",
     "url": "https://www.easybreezebooks.com",
     "telephone": "",
     "priceRange": "$$",
@@ -145,8 +142,8 @@ export default function RootLayout({
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "QuickBooks Consulting",
-            "description": "Expert QuickBooks Online setup, training, and consulting"
+            "name": "Bookkeeping Consulting",
+            "description": "Expert bookkeeping setup, training, and consulting"
           }
         },
         {
@@ -178,12 +175,12 @@ export default function RootLayout({
     "founder": {
       "@type": "Person",
       "name": "Darren Cardwell",
-      "jobTitle": "Certified QuickBooks ProAdvisor",
-      "description": "QuickBooks ProAdvisor Program Member"
+      "jobTitle": "Professional Bookkeeper",
+      "description": "Professional Bookkeeper and Accounting Expert"
     },
     "knowsAbout": [
       "Bookkeeping",
-      "QuickBooks Online",
+      "Bookkeeping Online",
       "Payroll",
       "Financial Statements",
       "Account Reconciliation",

@@ -6,10 +6,10 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Bookkeeping Services",
   description:
-    "Professional bookkeeping services including QuickBooks consulting, payroll, account reconciliation, financial statements, and more. Serving Herriman, UT, Salt Lake City, and businesses nationwide.",
+    "Professional bookkeeping services including accounting software consulting, payroll, account reconciliation, financial statements, and more. Serving Herriman, UT, Salt Lake City, and businesses nationwide.",
   keywords: [
     "bookkeeping services",
-    "QuickBooks consulting",
+    "accounting software consulting",
     "payroll services",
     "account reconciliation",
     "financial statements",
@@ -24,14 +24,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Bookkeeping Services | Breeze Bookkeeping",
     description:
-      "Professional bookkeeping services including QuickBooks consulting, payroll, account reconciliation, and financial statements.",
+      "Professional bookkeeping services including accounting software consulting, payroll, account reconciliation, and financial statements.",
     url: "https://www.easybreezebooks.com/services",
     images: [
       {
-        url: "/quickbooks_at_office.avif",
+        url: "/accounting_software_at_office.avif",
         width: 1200,
         height: 630,
-        alt: "QuickBooks Bookkeeping Services",
+        alt: "Professional Bookkeeping Services",
       },
     ],
   },
@@ -61,8 +61,8 @@ export default function Services() {
                 <div className="-m-2 rounded-xl p-2 ring-1 ring-inset lg:-m-4 lg:rounded-2xl lg:p-4 bg-white/2.5 ring-white/10">
                   <div className="h-[450px] overflow-hidden relative">
                     <Image
-                      alt="Professional bookkeeping services with QuickBooks Online"
-                      src="/quickbooks_at_office.avif"
+                      alt="Professional bookkeeping services with accounting software"
+                      src="/accounting_software_at_office.avif"
                       fill={true}
                       className="w-304 bg-gray-50 shadow-xl ring-1 ring-gray-900/10 rounded-lg"
                       style={{ objectFit: "cover", objectPosition: "center" }}
@@ -90,7 +90,7 @@ export default function Services() {
               books drive actionable financial insights and serve as the
               backbone for tax filings. When errors occur, the cost can be high
               — from poor decisions made on bad data to overpaying in taxes.
-              That’s why having a Certified QuickBooks ProAdvisor manage your
+              That&apos;s why having a professional bookkeeper manage your
               bookkeeping and accounting is such a valuable safeguard.
             </p>
             <p className="mt-6 text-lg/8 text-gray-300">

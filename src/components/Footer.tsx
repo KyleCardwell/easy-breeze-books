@@ -15,21 +15,21 @@ const Footer = () => {
           <div className="flex flex-col mt-16 md:grid md:grid-cols-2 md:gap-8 xl:col-span-2 md:mt-0">
             {/* Badges */}
             <div className="mx-auto grid grid-cols-2 items-center gap-x-8 gap-y-12 sm:gap-x-10 sm:gap-y-14">
-              {/* <Link href=""}>Check out my QuickBooks ProAdvisor Profile</Link> */}
-              {/* <Image
-                alt="QuickBooks ProAdvisor Level 2 Certification Badge"
-                src="/QuickBooks-Level-2-Badge.png"
+              {/* <Link href=""}>Check out my Certified QuickBooks ProAdvisor Profile</Link> */}
+              <Image
+                alt="Certified QuickBooks ProAdvisor Level 2 Certification Badge"
+                src="/Certified-Level-2-Badge.png"
                 width={70}
                 height={70}
                 className="max-h-48 w-full object-contain"
               />
               <Image
-                alt="QuickBooks Payroll Certification Badge"
-                src="/QuickBooks-Payroll-Badge.png"
+                alt="Certified QuickBooks ProAdvisor Payroll Certification Badge"
+                src="/Certified-Payroll-Badge.png"
                 width={70}
                 height={70}
                 className="max-h-48 w-full object-contain"
-              /> */}
+              />
             </div>
             <div className="flex flex-col md:flex-row md:gap-8 md:justify-around">
               {/* Business Info */}
