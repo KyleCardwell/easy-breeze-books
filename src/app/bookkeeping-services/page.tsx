@@ -1,6 +1,6 @@
 import { CheckIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
-import { services } from "@/utils/constants";
+import { calendlyLink, services } from "@/utils/constants";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     "Salt Lake City",
   ],
   alternates: {
-    canonical: "https://www.easybreezebooks.com/services",
+    canonical: "https://www.easybreezebooks.com/bookkeeping-services",
   },
   openGraph: {
     title: "Bookkeeping Services | Breeze Bookkeeping",
     description:
       "Professional bookkeeping services including accounting software consulting, payroll, account reconciliation, and financial statements.",
-    url: "https://www.easybreezebooks.com/services",
+    url: "https://www.easybreezebooks.com/bookkeeping-services",
     images: [
       {
         url: "/accounting_software_at_office.avif",
@@ -106,7 +106,7 @@ export default function Services() {
         </div>
 
         {/* Featres */}
-        <div className="mx-auto mt-16 max-w-7xl sm:mt-8 lg:mt-32 px-6">
+        <div className="mx-auto mt-16 max-w-7xl sm:mt-8 lg:mt-24 px-6">
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
             <h2 className="text-base/7 font-semibold text-indigo-400">
               Services Offered
@@ -126,6 +126,32 @@ export default function Services() {
                 </div>
               ))}
             </dl>
+          </div>
+        </div>
+
+        {/* Book a meeting */}
+        <div className="mx-auto mt-16 max-w-7xl sm:mt-20 lg:mt-24 bg-indigo-600 lg:rounded-2xl">
+          <div className="mx-auto max-w-2xl p-12 lg:max-w-4xl text-white">
+            <h2 className="text-base/7 font-semibold text-indigo-00">
+              Schedule a Meeting
+            </h2>
+            <p className="mt-4 text-4xl">
+              SCHEDULE A <strong>FREE</strong> PHONE CONSULTATION
+            </p>
+            <p className="mt-4 text-lg/8 text-pretty">
+              Ready to see how these services can work for your business?
+              Let&apos;s discuss which solutions fit your needs best. Click the
+              button below to choose a day and time that works for you, and
+              you&apos;ll be instantly booked in my calendar!
+            </p>
+            <div className="w-full flex justify-center mt-6">
+              <a
+                href={calendlyLink}
+                className="text-lg/8 text-indigo-600 hover:text-indigo-500 font-semibold"
+              >
+                <div className="rounded bg-white py-2 px-4">Schedule Now</div>
+              </a>
+            </div>
           </div>
         </div>
 

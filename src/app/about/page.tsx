@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Metadata } from "next";
+import { calendlyLink } from "@/utils/constants";
 
 export const metadata: Metadata = {
   title: "About Darren Cardwell",
@@ -66,11 +67,12 @@ export default function About() {
 
                 <p className="text-lg/8 text-gray-300">
                   Hello! I&apos;m Darren Cardwell, the face behind Breeze
-                  Bookkeeping. I&apos;m based in Herriman, UT, near Salt Lake City. Thanks to
-                  cloud technology, however, I work with business owners all
-                  over the country. From account reconciliation and categorizing
-                  transactions to payroll, invoicing, and payables, to
-                  full-service accounting, I handle it all!
+                  Bookkeeping. I&apos;m based in Herriman, UT, near Salt Lake
+                  City. Thanks to cloud technology, however, I work with
+                  business owners all over the country. From account
+                  reconciliation and categorizing transactions to payroll,
+                  invoicing, and payables, to full-service accounting, I handle
+                  it all!
                 </p>
 
                 <p className="text-lg/8 text-gray-300 mt-6">
@@ -91,6 +93,34 @@ export default function About() {
                   spending time with my sons and their growing families.
                 </p>
               </article>
+
+              {/* Book a meeting */}
+              <div className="mx-auto mt-16 max-w-7xl sm:mt-20 lg:mt-32 bg-indigo-600 lg:rounded-2xl">
+                <div className="mx-auto max-w-2xl p-12 lg:max-w-4xl text-white">
+                  <h2 className="text-base/7 font-semibold text-indigo-00">
+                    Schedule a Meeting
+                  </h2>
+                  <p className="mt-4 text-4xl">
+                    SCHEDULE A <strong>FREE</strong> PHONE CONSULTATION
+                  </p>
+                  <p className="mt-4 text-lg/8 text-pretty">
+                    I&apos;d love to learn more about your business and discuss
+                    how I can help simplify your bookkeeping. Click the button
+                    below to choose a day and time that works best for you, and
+                    you&apos;ll be instantly booked in my calendar!
+                  </p>
+                  <div className="w-full flex justify-center mt-6">
+                    <a
+                      href={calendlyLink}
+                      className="text-lg/8 text-indigo-600 hover:text-indigo-500 font-semibold"
+                    >
+                      <div className="rounded bg-white py-2 px-4">
+                        Schedule Now
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

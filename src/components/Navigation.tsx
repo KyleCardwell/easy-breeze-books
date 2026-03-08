@@ -23,14 +23,16 @@ export default function Navigation() {
       >
         <div className="flex lg:flex-1">
           {/* <p className="text-2xl font-semibold">Breeze Bookkeeping</p> */}
-          <Image
-            src="/breeze_bookkeeping_logo.svg"
-            alt="Breeze Bookkeeping"
-            width={500}
-            height={256}
-            className="max-w-1/4 sm:max-w-1/5 lg:max-w-1/7 xl:max-w-1/8 drop-shadow-lg invert"
-            priority
-          />
+          <Link href="/" className="block">
+            <Image
+              src="/breeze_bookkeeping_logo.svg"
+              alt="Breeze Bookkeeping"
+              width={500}
+              height={256}
+              className="max-w-1/4 sm:max-w-1/5 drop-shadow-lg invert"
+              priority
+            />
+          </Link>
         </div>
         <div className="flex md:hidden">
           <button
