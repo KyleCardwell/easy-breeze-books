@@ -4,6 +4,7 @@ import Image from "next/image";
 import Script from "next/script";
 import { calendlyLink, homePageServices } from "@/utils/constants";
 import TestimonialsCarousel from "@/components/TestimonialsCarousel";
+import Link from "next/link";
 
 export default function Homepage() {
   const faqSchema = {
@@ -83,14 +84,16 @@ export default function Homepage() {
                     <div className="flex flex-col gap-2 w-1/2 sm:w-full h-2/3 items-center justify-center">
                       <h1 className="contents">
                         <span className="sr-only">Breeze Bookkeeping</span>
-                        <Image
-                          src="/breeze_bookkeeping_logo.svg"
-                          alt="Breeze Bookkeeping - Professional Bookkeeping Services"
-                          width={500}
-                          height={256}
-                          className="pl-6 mt-4 w-4/5 sm:w-3/4 sm:max-w-sm md:max-w-md drop-shadow-lg invert"
-                          priority
-                        />
+                        <Link href="/">
+                          <Image
+                            src="/breeze_bookkeeping_logo.svg"
+                            alt="Breeze Bookkeeping - Professional Bookkeeping Services"
+                            width={500}
+                            height={256}
+                            className="pl-6 mt-4 w-4/5 sm:w-3/4 sm:max-w-sm md:max-w-md drop-shadow-lg invert"
+                            priority
+                          />
+                        </Link>
                       </h1>
                       <p className="hidden lg:block mt-4 text-sm md:text-md font-medium text-pretty text-white sm:text-xl/8 drop-shadow-lg">
                         ~ Effortless accounting that feels like a breeze ~
@@ -143,9 +146,10 @@ export default function Homepage() {
               Although I’m based in Herriman, UT—just outside Salt Lake City—I
               work with businesses all over the country thanks to secure,
               cloud-based technology. As a{" "}
-              <strong>professional bookkeeper</strong>, I help
-              connect your bookkeeping with the best financial apps and accounting software available,
-              streamlining your systems so everything works smoothly together.
+              <strong>professional bookkeeper</strong>, I help connect your
+              bookkeeping with the best financial apps and accounting software
+              available, streamlining your systems so everything works smoothly
+              together.
             </p>
 
             <p className="mt-6 text-lg/8 text-gray-300">
@@ -172,9 +176,9 @@ export default function Homepage() {
             </p>
             <p className="mt-4 text-lg/8 text-pretty">
               Let&apos;s talk about how affordable and profitable it can be to
-              have Breeze Bookkeeping manage your monthly bookkeeping.
-              Simply click the button below to choose a day and time that works
-              best for you, and you’ll be instantly booked in my calendar!
+              have Breeze Bookkeeping manage your monthly bookkeeping. Simply
+              click the button below to choose a day and time that works best
+              for you, and you’ll be instantly booked in my calendar!
             </p>
             <div className="w-full flex justify-center mt-6">
               <a
@@ -213,10 +217,10 @@ export default function Homepage() {
             </dl>
             <div className="w-full flex justify-center mt-6">
               <a
-                href="/services"
+                href="/bookkeeping-services"
                 className="text-md/8  font-semibold text-indigo-400 hover:text-indigo-300"
               >
-                See all services
+                See all bookkeeping services
               </a>
             </div>
           </div>
