@@ -217,7 +217,7 @@ export default function Homepage() {
             </dl>
             <div className="w-full flex justify-center mt-6">
               <a
-                href="/bookkeeping-services"
+                href="/services"
                 className="text-md/8  font-semibold text-indigo-400 hover:text-indigo-300"
               >
                 See all bookkeeping services

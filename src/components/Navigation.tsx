@@ -11,6 +11,7 @@ import Image from "next/image";
 export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
+  const hideNavButtons = pathname === "/bookkeeping-services";
 
   return (
     <header className="absolute inset-x-0 top-0 z-50">
@@ -34,38 +35,42 @@ export default function Navigation() {
             />
           </Link>
         </div>
-        <div className="flex md:hidden">
-          <button
-            type="button"
-            onClick={() => setMobileMenuOpen(true)}
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200"
-          >
-            <span className="sr-only">Open main menu</span>
-            <Bars3Icon aria-hidden="true" className="size-6" />
-          </button>
-        </div>
-        <div className="hidden md:flex md:gap-x-12 items-start">
-          {navigation.map((item) => {
-            const isActive = pathname === item.href;
-            return (
-              <Link
-                key={item.name}
-                href={item.href}
-                className={`text-sm/6 font-semibold ${
-                  isActive
-                    ? "text-indigo-400"
-                    : "text-white hover:text-gray-300"
-                }`}
-                suppressHydrationWarning
+        {!hideNavButtons ? (
+          <>
+            <div className="flex md:hidden">
+              <button
+                type="button"
+                onClick={() => setMobileMenuOpen(true)}
+                className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200"
               >
-                {item.name}
-              </Link>
-            );
-          })}
-        </div>
+                <span className="sr-only">Open main menu</span>
+                <Bars3Icon aria-hidden="true" className="size-6" />
+              </button>
+            </div>
+            <div className="hidden md:flex md:gap-x-12 items-start">
+              {navigation.map((item) => {
+                const isActive = pathname === item.href;
+                return (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className={`text-sm/6 font-semibold ${
+                      isActive
+                        ? "text-indigo-400"
+                        : "text-white hover:text-gray-300"
+                    }`}
+                    suppressHydrationWarning
+                  >
+                    {item.name}
+                  </Link>
+                );
+              })}
+            </div>
+          </>
+        ) : null}
       </nav>
       <Dialog
-        open={mobileMenuOpen}
+        open={!hideNavButtons && mobileMenuOpen}
         onClose={setMobileMenuOpen}
         className="lg:hidden"
       >
