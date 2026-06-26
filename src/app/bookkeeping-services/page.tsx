@@ -2,12 +2,12 @@
 
 import { useState } from "react";
 import Script from "next/script";
+import { useRouter } from "next/navigation";
 import {
   CheckBadgeIcon,
   CurrencyDollarIcon,
   UserGroupIcon,
 } from "@heroicons/react/24/outline";
-import { CheckCircleIcon } from "@heroicons/react/24/solid";
 
 declare global {
   interface Window {
@@ -57,9 +57,9 @@ const initialFormState: FormState = {
 };
 
 export default function BookkeepingServicesLandingPage() {
+  const router = useRouter();
   const [formData, setFormData] = useState<FormState>(initialFormState);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
   const [error, setError] = useState("");
   const recaptchaSiteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
 
@@ -68,6 +68,27 @@ export default function BookkeepingServicesLandingPage() {
   ) => {
     const { name, value } = event.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const formatPhone = (value: string) => {
+    const digits = value.replace(/\D/g, "").slice(0, 10);
+
+    if (digits.length <= 3) {
+      return digits;
+    }
+
+    if (digits.length <= 6) {
+      return `(${digits.slice(0, 3)}) ${digits.slice(3)}`;
+    }
+
+    return `(${digits.slice(0, 3)}) ${digits.slice(3, 6)}-${digits.slice(6)}`;
+  };
+
+  const handlePhoneChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setFormData((prev) => ({
+      ...prev,
+      phone: formatPhone(event.target.value),
+    }));
   };
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
@@ -105,14 +126,14 @@ export default function BookkeepingServicesLandingPage() {
         );
       }
 
-      setIsSubmitted(true);
-
       if (typeof window !== "undefined" && window.gtag) {
         window.gtag("event", "generate_lead", {
           event_category: "form",
           event_label: "bookkeeping_services_landing",
         });
       }
+
+      router.push("/bookkeeping-services-thank-you");
     } catch (submitError) {
       setError(
         submitError instanceof Error
@@ -192,129 +213,118 @@ export default function BookkeepingServicesLandingPage() {
               Get Your Free Consultation
             </h2>
 
-            {isSubmitted ? (
-              <div className="mt-10 text-center">
-                <CheckCircleIcon className="mx-auto size-16 text-indigo-400" />
-                <h3 className="mt-6 text-3xl font-semibold text-white">
-                  Thank You!
-                </h3>
-                <p className="mt-4 text-lg text-gray-300">
-                  Your message has been received. Someone from Breeze
-                  Bookkeeping will be in contact with you soon.
+            <form onSubmit={handleSubmit} className="mt-8 space-y-5">
+              {error ? (
+                <p className="rounded-md border border-red-400/40 bg-red-500/10 px-4 py-3 text-sm text-red-200">
+                  {error}
                 </p>
-              </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="mt-8 space-y-5">
-                {error ? (
-                  <p className="rounded-md border border-red-400/40 bg-red-500/10 px-4 py-3 text-sm text-red-200">
-                    {error}
-                  </p>
-                ) : null}
+              ) : null}
 
-                <div>
-                  <label
-                    htmlFor="name"
-                    className="mb-2 block text-sm font-semibold text-white"
-                  >
-                    Full Name
-                  </label>
-                  <input
-                    id="name"
-                    name="name"
-                    type="text"
-                    required
-                    value={formData.name}
-                    onChange={handleChange}
-                    className="w-full rounded-md border border-white/15 bg-gray-900 px-4 py-3 text-white placeholder:text-gray-400 focus:border-indigo-500 focus:outline-none"
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="email"
-                    className="mb-2 block text-sm font-semibold text-white"
-                  >
-                    Email Address
-                  </label>
-                  <input
-                    id="email"
-                    name="email"
-                    type="email"
-                    required
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="w-full rounded-md border border-white/15 bg-gray-900 px-4 py-3 text-white placeholder:text-gray-400 focus:border-indigo-500 focus:outline-none"
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="phone"
-                    className="mb-2 block text-sm font-semibold text-white"
-                  >
-                    Phone Number
-                  </label>
-                  <input
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    className="w-full rounded-md border border-white/15 bg-gray-900 px-4 py-3 text-white placeholder:text-gray-400 focus:border-indigo-500 focus:outline-none"
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="businessName"
-                    className="mb-2 block text-sm font-semibold text-white"
-                  >
-                    Business Name
-                  </label>
-                  <input
-                    id="businessName"
-                    name="businessName"
-                    type="text"
-                    value={formData.businessName}
-                    onChange={handleChange}
-                    className="w-full rounded-md border border-white/15 bg-gray-900 px-4 py-3 text-white placeholder:text-gray-400 focus:border-indigo-500 focus:outline-none"
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="message"
-                    className="mb-2 block text-sm font-semibold text-white"
-                  >
-                    What services are you interested in?
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    required
-                    rows={5}
-                    value={formData.message}
-                    onChange={handleChange}
-                    className="w-full rounded-md border border-white/15 bg-gray-900 px-4 py-3 text-white placeholder:text-gray-400 focus:border-indigo-500 focus:outline-none"
-                  />
-                </div>
-
-                <div className="pt-2">
-                  <div
-                    className="g-recaptcha"
-                    data-sitekey={recaptchaSiteKey}
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="w-full rounded bg-indigo-600 px-8 py-3 text-lg font-semibold text-white hover:bg-indigo-500 disabled:cursor-not-allowed disabled:opacity-70"
+              <div>
+                <label
+                  htmlFor="name"
+                  className="mb-2 block text-sm font-semibold text-white"
                 >
-                  {isSubmitting ? "Sending..." : "Get Your Free Consultation"}
-                </button>
-              </form>
-            )}
+                  Full Name
+                </label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  required
+                  value={formData.name}
+                  onChange={handleChange}
+                  className="w-full rounded-md border border-white/15 bg-gray-900 px-4 py-3 text-white placeholder:text-gray-400 focus:border-indigo-500 focus:outline-none"
+                />
+              </div>
+
+              <div>
+                <label
+                  htmlFor="email"
+                  className="mb-2 block text-sm font-semibold text-white"
+                >
+                  Email Address
+                </label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  required
+                  value={formData.email}
+                  onChange={handleChange}
+                  className="w-full rounded-md border border-white/15 bg-gray-900 px-4 py-3 text-white placeholder:text-gray-400 focus:border-indigo-500 focus:outline-none"
+                />
+              </div>
+
+              <div>
+                <label
+                  htmlFor="phone"
+                  className="mb-2 block text-sm font-semibold text-white"
+                >
+                  Phone Number
+                </label>
+                <input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  value={formData.phone}
+                  onChange={handlePhoneChange}
+                  inputMode="numeric"
+                  placeholder="(555) 555-5555"
+                  className="w-full rounded-md border border-white/15 bg-gray-900 px-4 py-3 text-white placeholder:text-gray-400 focus:border-indigo-500 focus:outline-none"
+                />
+              </div>
+
+              <div>
+                <label
+                  htmlFor="businessName"
+                  className="mb-2 block text-sm font-semibold text-white"
+                >
+                  Business Name
+                </label>
+                <input
+                  id="businessName"
+                  name="businessName"
+                  type="text"
+                  value={formData.businessName}
+                  onChange={handleChange}
+                  className="w-full rounded-md border border-white/15 bg-gray-900 px-4 py-3 text-white placeholder:text-gray-400 focus:border-indigo-500 focus:outline-none"
+                />
+              </div>
+
+              <div>
+                <label
+                  htmlFor="message"
+                  className="mb-2 block text-sm font-semibold text-white"
+                >
+                  What services are you interested in?
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  rows={5}
+                  value={formData.message}
+                  onChange={handleChange}
+                  className="w-full rounded-md border border-white/15 bg-gray-900 px-4 py-3 text-white placeholder:text-gray-400 focus:border-indigo-500 focus:outline-none"
+                />
+              </div>
+
+              <div className="pt-2">
+                <div
+                  className="g-recaptcha"
+                  data-sitekey={recaptchaSiteKey}
+                />
+              </div>
+
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="w-full rounded bg-indigo-600 px-8 py-3 text-lg font-semibold text-white hover:bg-indigo-500 disabled:cursor-not-allowed disabled:opacity-70"
+              >
+                {isSubmitting ? "Sending..." : "Get Your Free Consultation"}
+              </button>
+            </form>
           </div>
         </div>
       </main>
