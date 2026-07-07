@@ -24,3 +24,25 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes cta-shine {
+  0%,
+  75% {
+    left: -50%;
+  }
+
+  90%,
+  100% {
+    left: 150%;
+  }
+}
+
+.animate-cta-shine {
+  animation: cta-shine 6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-cta-shine {
+    animation: none;
+  }
+}

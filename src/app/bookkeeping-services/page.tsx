@@ -63,6 +63,11 @@ export default function BookkeepingServicesLandingPage() {
   const [error, setError] = useState("");
   const recaptchaSiteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
 
+  const handleScrollToForm = () => {
+    const formSection = document.getElementById("consultation-form");
+    formSection?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   const handleChange = (
     event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
@@ -181,6 +186,22 @@ export default function BookkeepingServicesLandingPage() {
                 in their financial decisions. I handle the details every month
                 so you can focus on growing your business.
               </p>
+              <div className="mt-10 flex justify-center">
+                <button
+                  type="button"
+                  onClick={handleScrollToForm}
+                  className="relative overflow-hidden rounded-md bg-indigo-600 px-6 py-3 text-base font-semibold text-white shadow-sm transition hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+                >
+                  <span
+                    aria-hidden="true"
+                    className="animate-cta-shine pointer-events-none absolute inset-y-0 -left-1/2 w-1/3 skew-x-[-20deg] bg-white/50 blur-sm"
+                  />
+                  <span className="relative z-10">Get Your Free Consultation</span>
+                </button>
+              </div>
+              <p className="mt-4 text-center text-sm text-gray-300">
+                No obligation. Let&apos;s talk about your bookkeeping needs.
+              </p>
             </div>
           </div>
         </div>
@@ -207,7 +228,10 @@ export default function BookkeepingServicesLandingPage() {
           </div>
         </div>
 
-        <div className="mx-auto max-w-4xl px-6 pb-20 pt-8 lg:px-8 lg:pb-24">
+        <div
+          id="consultation-form"
+          className="mx-auto max-w-4xl scroll-mt-24 px-6 pb-20 pt-8 lg:px-8 lg:pb-24"
+        >
           <div className="rounded-2xl bg-gray-800/70 p-8 ring-1 ring-inset ring-white/10 sm:p-10">
             <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
               Get Your Free Consultation
