@@ -230,9 +230,9 @@ export default function BookkeepingServicesLandingPage() {
 
         <div
           id="consultation-form"
-          className="mx-auto max-w-4xl scroll-mt-24 px-6 pb-20 pt-8 lg:px-8 lg:pb-24"
+          className="mx-auto max-w-4xl scroll-mt-24 px-4 pb-20 pt-8 sm:px-6 lg:px-8 lg:pb-24"
         >
-          <div className="rounded-2xl bg-gray-800/70 p-8 ring-1 ring-inset ring-white/10 sm:p-10">
+          <div className="rounded-2xl bg-gray-800/70 p-5 ring-1 ring-inset ring-white/10 sm:p-10">
             <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
               Get Your Free Consultation
             </h2>
@@ -335,10 +335,12 @@ export default function BookkeepingServicesLandingPage() {
               </div>
 
               <div className="pt-2">
-                <div
-                  className="g-recaptcha"
-                  data-sitekey={recaptchaSiteKey}
-                />
+                <div className="h-[78px] max-[420px]:h-[70px] max-[360px]:h-[59px]">
+                  <div
+                    className="g-recaptcha origin-left max-[420px]:scale-[0.9] max-[360px]:scale-[0.76]"
+                    data-sitekey={recaptchaSiteKey}
+                  />
+                </div>
               </div>
 
               <button
