@@ -41,8 +41,8 @@ const Footer = () => {
                   <p>5536 Emmeline Dr</p>
                   <p>Herriman, UT 84096</p>
                   <p>
-                    <Link href="mailto:darren@easybreezbooks.com">
-                      darren@easybreezbooks.com
+                    <Link href="mailto:darren@easybreezebooks.com">
+                      darren@easybreezebooks.com
                     </Link>
                   </p>
                   <p>
