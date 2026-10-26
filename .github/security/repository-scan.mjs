@@ -14,14 +14,32 @@ const knownSymbols = [
   ["mlCqUCKEc", "$sOB$oll"].join(""),
   ["_", "$_", "1e42"].join(""),
 ];
+const knownTextIndicators = [
+  ["fullnode.mainnet.", "aptoslabs.com"].join(""),
+  ["api.", "trongrid.io"].join(""),
+  ["bsc-dataseed.", "binance.org"].join(""),
+  ["23.27.", "244.241"].join(""),
+  ["144.172.", "115.31"].join(""),
+  ["clipboard", "-bot"].join(""),
+  ["BIP39_", "WORDLIST_PATH"].join(""),
+  ["Clipboard monitoring", " bot"].join(""),
+  ["/import_", "data"].join(""),
+  ["C260", "512A"].join(""),
+  ["RS260", "605"].join(""),
+  ["auth-confirm-eight.", "vercel.app"].join(""),
+];
 const suspiciousNames = new Set([
   "config.bat",
   "branch_structure.json",
   "temp_auto_push.bat",
   "temp_interactive_push.bat",
+  "run_bot.py",
+  "clipboard_monitor.py",
+  "bip39_english.txt",
+  "_launch_now.vbs",
 ]);
 
-const scriptExtensions = /\.(?:[cm]?js|jsx|ts|tsx|vue|svelte)$/i;
+const scriptExtensions = /\.(?:[cm]?js|jsx|ts|tsx|vue|svelte|py)$/i;
 const assetExtensions = /\.(?:woff2?|ttf|eot|png|jpe?g|gif|pdf|zip)$/i;
 const maximumReadSize = 20 * 1024 * 1024;
 
@@ -69,6 +87,12 @@ for (const file of tracked) {
     }
   }
 
+  for (const indicator of knownTextIndicators) {
+    if (text.includes(indicator)) {
+      report(file, "known malware or collection indicator: " + indicator);
+    }
+  }
+
   if (scriptExtensions.test(file)) {
     const lines = text.split(/\r?\n/);
     const longest = lines.reduce(
@@ -92,6 +116,17 @@ for (const file of tracked) {
 
     if (/export\s+default\s+[^;\r\n]+;[ \t]{20,}\S/.test(text)) {
       report(file, "contains hidden code after an export statement");
+    }
+
+    if (/\batob\s*\(\s*process\.env\./.test(text)) {
+      report(file, "decodes an environment value as executable configuration");
+    }
+
+    if (
+      /\beval\s*\(/.test(text) &&
+      /(?:node-fetch|\bfetch\s*\(|\bhttps?\.request\s*\()/.test(text)
+    ) {
+      report(file, "combines network retrieval with dynamic code execution");
     }
   }
 
@@ -134,7 +169,9 @@ if (fs.existsSync(".gitignore")) {
     if (
       suspiciousNames.has(rule) ||
       rule === ".gitignore" ||
-      rule.endsWith("/.gitignore")
+      rule.endsWith("/.gitignore") ||
+      rule === "supabase/functions/dump/" ||
+      rule === "supabase/functions/*.zip"
     ) {
       report(".gitignore", "suspicious ignore rule: " + originalRule);
     }
